@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <div className="relative h-72 md:h-96 group rounded-2xl overflow-hidden shadow-xl border border-foreground/10 dark:border-foreground/20">
               <Image
-                src="/project-hero.png"
+                src="/project-hero.webp"
                 alt="Contoh Website UMKM"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-[2000ms] ease-out"

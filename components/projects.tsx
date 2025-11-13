@@ -13,7 +13,7 @@ const projects = [
     description: "Platform pemesanan catering online dengan sistem order dan pembayaran",
     detailDescription:
       "Website catering online yang memudahkan pelanggan memesan makanan untuk berbagai acara. Dilengkapi dengan katalog menu lengkap, sistem pemesanan otomatis, kalkulasi harga real-time, pilihan paket katering, dan integrasi pembayaran online untuk kemudahan transaksi.",
-    image: "/project-4.png",
+    image: "/project-4.webp",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projects = [
     description: "Website toko donut online dengan desain manis dan menarik",
     detailDescription:
       "Website e-commerce untuk toko donut dengan tampilan visual yang menarik dan user-friendly. Menampilkan berbagai varian rasa donut, sistem keranjang belanja, pre-order, dan delivery tracking untuk memberikan pengalaman belanja online yang menyenangkan.",
-    image: "/project-5.png",
+    image: "/project-5.webp",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     description: "Aplikasi web instansi pemerintah dengan sistem manajemen data lengkap",
     detailDescription:
       "Aplikasi web custom untuk IKK LAN RI dengan fitur registrasi pengguna, upload dan download data, optimasi query database untuk performa maksimal, dan redesign UI/UX yang modern dan user-friendly. Dibangun dengan Java Spring Boot backend dan Vue.js frontend untuk pengalaman pengguna yang responsif.",
-    image: "/project-3.png",
+    image: "/project-3.webp",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projects = [
     description: "Platform reservasi tempat online dengan sistem booking real-time",
     detailDescription:
       "Platform reservasi tempat yang memudahkan pengguna untuk melakukan booking lokasi secara online. Dilengkapi dengan sistem manajemen reservasi, kalender ketersediaan, dan notifikasi otomatis untuk meningkatkan efisiensi pengelolaan tempat.",
-    image: "/project-1.png",
+    image: "/project-1.webp",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const projects = [
     description: "Company Profile service AC dengan desain modern dan konversi tinggi",
     detailDescription:
       "Company Profile profesional untuk layanan service AC dengan gradient design yang menarik. Dilengkapi dengan sistem booking online, paket berlangganan, rating pelanggan, dan multiple channel komunikasi (Call, WhatsApp, Email) untuk memaksimalkan konversi.",
-    image: "/project-2.png",
+    image: "/project-2.webp",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const projects = [
     description: "Portal listing properti dengan fitur pencarian dan filter lengkap",
     detailDescription:
       "Website portal properti yang menampilkan listing rumah, apartemen, dan properti komersial. Dilengkapi dengan fitur pencarian advanced, filter berdasarkan lokasi dan harga dan sistem inquiry langsung ke agen untuk memudahkan proses jual-beli properti.",
-    image: "/project-6.png",
+    image: "/project-6.webp",
   },
 ]
 
