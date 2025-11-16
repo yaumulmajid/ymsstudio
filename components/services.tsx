@@ -20,7 +20,7 @@ const services = [
     icon: Zap,
     title: "Google Ads & Meta Ads",
     description:
-      "Layanan pengelolaan iklan di Google dan Meta untuk meningkatkan jangkauan, traffic, dan konversi secara efektif.",
+      "Layanan pengelolaan iklan di Google dan Meta untuk meningkatkan jangkauan, traffic, dan konversi secara efektif untuk bisnis Anda.",
   },
 ]
 
