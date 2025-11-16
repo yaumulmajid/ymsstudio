@@ -5,7 +5,7 @@ import { Check } from "lucide-react"
 
 const pricingTiers = [
   {
-    name: "Website Basic",
+    name: "Basic",
     price: "799k",
     description: "Cocok untuk personal brand, portofolio, dan usaha kecil",
     features: [
