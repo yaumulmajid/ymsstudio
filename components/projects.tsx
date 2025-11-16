@@ -10,9 +10,9 @@ const projects = [
     category: "E-Commerce",
     tags: ["WordPress", "WooCommerce", "Elementor"],
     type: "Pribadi",
-    description: "Platform pemesanan catering online dengan sistem order dan pembayaran",
+    description: "Website catering online dengan fitur pemesanan dan pembayaran.",
     detailDescription:
-      "Website catering online yang memudahkan pelanggan memesan makanan untuk berbagai acara. Dilengkapi dengan katalog menu lengkap, sistem pemesanan otomatis, kalkulasi harga real-time, pilihan paket katering, dan integrasi pembayaran online untuk kemudahan transaksi.",
+      "Website catering yang memudahkan pelanggan memesan makanan untuk berbagai kebutuhan. Menyediakan katalog menu, sistem pemesanan otomatis, perhitungan harga langsung, pilihan paket, dan pembayaran online.",
     image: "/project-4.webp",
   },
   {
@@ -21,9 +21,9 @@ const projects = [
     category: "E-Commerce",
     tags: ["WordPress", "WooCommerce", "CSS"],
     type: "Pribadi",
-    description: "Website toko donut online dengan desain manis dan menarik",
+    description: "Website toko donut dengan tampilan simple dan menarik.",
     detailDescription:
-      "Website e-commerce untuk toko donut dengan tampilan visual yang menarik dan user-friendly. Menampilkan berbagai varian rasa donut, sistem keranjang belanja, pre-order, dan delivery tracking untuk memberikan pengalaman belanja online yang menyenangkan.",
+      "Website toko donut yang menampilkan berbagai varian rasa, dilengkapi keranjang belanja, fitur pre-order, dan pemantauan pesanan. Dibuat dengan tampilan yang ringan dan mudah digunakan.",
     image: "/project-5.webp",
   },
   {
@@ -32,9 +32,9 @@ const projects = [
     category: "Web App",
     tags: ["Java", "Spring Boot", "Vue.js"],
     type: "Tim",
-    description: "Aplikasi web instansi pemerintah dengan sistem manajemen data lengkap",
+    description: "Aplikasi web instansi pemerintah dengan pengelolaan data lengkap.",
     detailDescription:
-      "Aplikasi web custom untuk IKK LAN RI dengan fitur registrasi pengguna, upload dan download data, optimasi query database untuk performa maksimal, dan redesign UI/UX yang modern dan user-friendly. Dibangun dengan Java Spring Boot backend dan Vue.js frontend untuk pengalaman pengguna yang responsif.",
+      "Aplikasi untuk IKK LAN RI dengan fitur registrasi pengguna, upload/download data, optimalisasi query, serta pembaruan tampilan agar lebih modern. Backend menggunakan Spring Boot dan frontend menggunakan Vue.js.",
     image: "/project-3.webp",
   },
   {
@@ -43,9 +43,9 @@ const projects = [
     category: "Landing Page",
     tags: ["WordPress"],
     type: "Pribadi",
-    description: "Platform reservasi tempat online dengan sistem booking real-time",
+    description: "Website reservasi tempat dengan sistem booking online.",
     detailDescription:
-      "Platform reservasi tempat yang memudahkan pengguna untuk melakukan booking lokasi secara online. Dilengkapi dengan sistem manajemen reservasi, kalender ketersediaan, dan notifikasi otomatis untuk meningkatkan efisiensi pengelolaan tempat.",
+      "Platform pemesanan tempat yang dilengkapi kalender ketersediaan, notifikasi otomatis, dan manajemen reservasi. Memudahkan pengguna dalam mem-booking lokasi secara online.",
     image: "/project-1.webp",
   },
   {
@@ -54,9 +54,9 @@ const projects = [
     category: "Company Profile",
     tags: ["WordPress", "Elementor", "CSS"],
     type: "Pribadi",
-    description: "Company Profile service AC dengan desain modern dan konversi tinggi",
+    description: "Website company profile layanan AC dengan tampilan modern.",
     detailDescription:
-      "Company Profile profesional untuk layanan service AC dengan gradient design yang menarik. Dilengkapi dengan sistem booking online, paket berlangganan, rating pelanggan, dan multiple channel komunikasi (Call, WhatsApp, Email) untuk memaksimalkan konversi.",
+      "Company profile untuk jasa service AC dengan desain bersih dan informatif. Tersedia fitur booking online, daftar paket layanan, rating pelanggan, dan kontak via WhatsApp/telepon.",
     image: "/project-2.webp",
   },
   {
@@ -65,12 +65,13 @@ const projects = [
     category: "Property Listing",
     tags: ["WordPress", "Elementor", "Advanced Custom Fields"],
     type: "Pribadi",
-    description: "Portal listing properti dengan fitur pencarian dan filter lengkap",
+    description: "Website listing properti dengan fitur pencarian lengkap.",
     detailDescription:
-      "Website portal properti yang menampilkan listing rumah, apartemen, dan properti komersial. Dilengkapi dengan fitur pencarian advanced, filter berdasarkan lokasi dan harga dan sistem inquiry langsung ke agen untuk memudahkan proses jual-beli properti.",
+      "Portal properti yang menampilkan berbagai listing rumah dan apartemen. Dilengkapi pencarian berdasarkan lokasi, harga, serta formulir untuk menghubungi agen secara langsung.",
     image: "/project-6.webp",
   },
-]
+];
+
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false)

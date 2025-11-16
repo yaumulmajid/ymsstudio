@@ -47,7 +47,7 @@ const pricingTiers = [
     price: "2,550k",
     description: "Solusi lengkap untuk bisnis e-commerce dan UMKM",
     features: [
-      "10+ Halaman (Home, Produk, Detail, Checkout, Kontak, dll.)",
+      "10+ Halaman (Home, Produk, Detail, Checkout, Kontak,D dll.)",
       "Desain Responsif & User-Friendly (Custom UI/UX)",
       "WooCommerce Setup",
       "Fitur Add to Cart / Order via WhatsApp",
