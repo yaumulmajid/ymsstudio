@@ -18,9 +18,9 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Optimasi Performa",
-    description: 
-      "Waktu loading kilat dan interaksi mulus dengan mengoptimalkan setiap aspek untuk efisiensi maksimal dan performa terbaik.",
+    title: "Google Ads & Meta Ads",
+    description:
+      "Layanan pengelolaan iklan di Google dan Meta untuk meningkatkan jangkauan, traffic, dan konversi secara efektif.",
   },
 ]
 
