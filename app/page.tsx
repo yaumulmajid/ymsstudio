@@ -2,6 +2,7 @@
 
 import Header from "@/components/header"
 import Hero from "@/components/hero"
+import About from "@/components/about"
 import Services from "@/components/services"
 import Projects from "@/components/projects"
 import Pricing from "@/components/pricing"
@@ -49,6 +50,7 @@ export default function Home() {
     <div className="overflow-x-hidden bg-background text-foreground transition-colors duration-300">
       <Header isScrolled={isScrolled} isDark={isDark} toggleTheme={toggleTheme} />
       <Hero />
+      <About />
       <Services />
       <Projects />
       <Pricing />

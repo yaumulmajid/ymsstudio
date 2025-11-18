@@ -210,7 +210,7 @@ export default function Projects() {
               {/* Card */}
               <div className="relative bg-card border border-border/50 rounded-lg overflow-hidden hover:border-foreground/20 transition-all duration-500 hover:shadow-lg hover:shadow-foreground/10 h-full flex flex-col">
                 {/* Image */}
-                <div className="h-48 bg-gradient-to-br from-foreground/10 to-foreground/5 relative overflow-hidden flex items-center justify-center group-hover:from-foreground/15 group-hover:to-foreground/10 transition-all duration-500">
+                <div className="aspect-[16/9] bg-gradient-to-br from-foreground/10 to-foreground/5 relative overflow-hidden flex items-center justify-center group-hover:from-foreground/15 group-hover:to-foreground/10 transition-all duration-500">
                   {project.image ? (
                     <Image 
                       src={project.image} 
