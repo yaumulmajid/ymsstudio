@@ -37,7 +37,7 @@ const pricingTiers = [
       "Google Analytics & Search Console Setup",
       "Backup Otomatis Mingguan",
       "2x Revisi Desain",
-      "Tahun berikutnya 500k",
+      "Tahun berikutnya 700k",
     ],
     cta: "Pilih Paket",
     featured: true,
