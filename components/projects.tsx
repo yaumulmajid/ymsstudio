@@ -185,7 +185,7 @@ export default function Projects() {
             className={`inline-flex items-center gap-2 text-xs font-semibold text-foreground mb-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             <span className="w-2 h-2 bg-foreground rounded-full"></span>
-            Portfolio
+            Portfolios
           </div>
           <h2
             className={`text-3xl md:text-4xl font-bold text-foreground mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
