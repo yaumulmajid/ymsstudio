@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "YMS Studio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "YMS Studio - Jasa Pembuatan Website",
