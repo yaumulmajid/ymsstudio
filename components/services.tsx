@@ -8,19 +8,19 @@ const services = [
     icon: Code2,
     title: "Pengembangan Web",
     description:
-      "Website modern, responsif, dan berkinerja tinggi yang dibangun dengan teknologi terkini untuk bisnis dari semua skala.",
+      "Kami membuat website modern, responsif, dan cepat dengan teknologi terkini seperti WordPress dan Custom Development. Cocok untuk company profile, landing page, hingga toko online yang profesional dan user-friendly.",
   },
   {
     icon: Smartphone,
-    title: "Konsultasi",
+    title: "Konsultasi Digital",
     description:
-      "Membantu merencanakan strategi digital yang tepat dengan konsultasi mendalam tentang teknologi dan solusi terbaik untuk bisnis Anda.",
+      "Konsultasi mendalam untuk merencanakan strategi digital bisnis Anda. Kami bantu tentukan teknologi yang tepat, fitur yang dibutuhkan, dan solusi terbaik untuk mencapai tujuan bisnis dengan efektif dan efisien.",
   },
   {
     icon: Zap,
     title: "Google Ads & Meta Ads",
     description:
-      "Layanan pengelolaan iklan di Google dan Meta untuk meningkatkan jangkauan, traffic, dan konversi secara efektif untuk bisnis Anda.",
+      "Layanan pengelolaan iklan profesional di Google dan Meta (Facebook & Instagram). Kami optimalkan kampanye iklan Anda untuk meningkatkan traffic, engagement, dan konversi penjualan dengan ROI yang maksimal.",
   },
 ]
 
@@ -56,29 +56,29 @@ export default function Services() {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-16 md:py-24 bg-background overflow-hidden">
+    <section id="services" ref={sectionRef} className="relative py-16 md:py-24 bg-[#E9F3F4] overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 -left-96 w-96 h-96 bg-foreground/3 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 -right-96 w-96 h-96 bg-foreground/3 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 -left-96 w-96 h-96 bg-[#2A8E9E]/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 -right-96 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <div
-            className={`inline-flex items-center gap-2 text-xs font-semibold text-foreground mb-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`inline-flex items-center gap-2 text-xs font-semibold text-[#1D1E20] mb-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            <span className="w-2 h-2 bg-foreground rounded-full"></span>
+            <span className="w-2 h-2 bg-[#2A8E9E] rounded-full"></span>
             My Services
           </div>
           <h2
-            className={`text-3xl md:text-4xl font-bold text-foreground mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-3xl md:text-4xl font-bold text-[#1D1E20] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Apa yang Saya Tawarkan
           </h2>
           <p
-            className={`text-base text-muted-foreground max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-base text-[#1D1E20]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Solusi komprehensif untuk mewujudkan visi digital Anda dan mendorong hasil bisnis nyata.
           </p>
@@ -96,26 +96,26 @@ export default function Services() {
                 }`}
               >
                 {/* Hover Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-foreground/10 to-foreground/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#2A8E9E]/10 to-[#180D39]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
 
                 {/* Card */}
-                <div className="relative bg-card border border-border/50 rounded-xl p-5 hover:border-foreground/20 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-foreground/10">
+                <div className="relative bg-white border border-[#2A8E9E]/20 rounded-xl p-5 hover:border-[#2A8E9E]/40 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#2A8E9E]/10">
                   {/* Icon */}
-                  <div className="w-10 h-10 bg-gradient-to-br from-foreground/10 to-foreground/5 rounded-lg p-2 mb-4 group-hover:from-foreground/15 group-hover:to-foreground/10 transition-all duration-300">
-                    <Icon className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#2A8E9E]/10 to-[#180D39]/5 rounded-lg p-2 mb-4 group-hover:from-[#2A8E9E]/15 group-hover:to-[#180D39]/10 transition-all duration-300">
+                    <Icon className="w-6 h-6 text-[#2A8E9E]" strokeWidth={1.5} />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-base font-bold text-foreground mb-2 group-hover:opacity-80 transition-opacity duration-300">
+                  <h3 className="text-base font-bold text-[#1D1E20] mb-2 group-hover:opacity-80 transition-opacity duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-sm text-[#1D1E20]/60 leading-relaxed">{service.description}</p>
 
                   {/* Arrow */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="w-7 h-7 bg-foreground/10 rounded-lg flex items-center justify-center">
+                    <div className="w-7 h-7 bg-[#2A8E9E]/10 rounded-lg flex items-center justify-center">
                       <svg
-                        className="w-3.5 h-3.5 text-foreground"
+                        className="w-3.5 h-3.5 text-[#2A8E9E]"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
