@@ -95,11 +95,11 @@ export default function Header({ isScrolled }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-[#1D1E20]"
+            className="lg:hidden p-2 text-[#2A8E9E]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? <X className="w-5 h-5 text-[#2A8E9E]" /> : <Menu className="w-5 h-5 text-[#2A8E9E]" />}
           </button>
         </div>
 
