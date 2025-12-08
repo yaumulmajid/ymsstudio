@@ -6,20 +6,20 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="relative bg-card border-t border-border/50 text-foreground">
+    <footer id="contact" className="relative bg-[#E9F3F4] text-[#1D1E20]">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/3 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2A8E9E]/3 to-transparent"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
         <div className="py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             {/* Brand */}
             <div>
-              <h3 className="text-lg font-bold text-foreground mb-3">YMS Studio</h3>
-              <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
+              <h3 className="text-lg font-bold text-[#1D1E20] mb-3">YMS Studio</h3>
+              <p className="text-xs text-[#1D1E20]/60 mb-4 leading-relaxed">
                 Jasa pembuatan website profesional untuk UMKM dan bisnis. Spesialis WordPress & Custom Development dengan harga terjangkau dan hasil maksimal.
               </p>
               <div className="flex gap-2.5">
@@ -27,28 +27,28 @@ export default function Footer() {
                   href="https://wa.me/6283822640883"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-foreground/10 hover:bg-foreground/20 text-foreground transition-colors duration-300"
+                  className="p-2 rounded-lg bg-white hover:bg-[#2A8E9E] hover:text-white text-[#1D1E20] transition-colors duration-300"
                   aria-label="WhatsApp"
                 >
                   <MessageCircle size={16} />
                 </a>
                 <a
                   href="#"
-                  className="p-2 rounded-lg bg-foreground/10 hover:bg-foreground/20 text-foreground transition-colors duration-300"
+                  className="p-2 rounded-lg bg-white hover:bg-[#2A8E9E] hover:text-white text-[#1D1E20] transition-colors duration-300"
                   aria-label="Instagram"
                 >
                   <Instagram size={16} />
                 </a>
                 <a
                   href="#"
-                  className="p-2 rounded-lg bg-foreground/10 hover:bg-foreground/20 text-foreground transition-colors duration-300"
+                  className="p-2 rounded-lg bg-white hover:bg-[#2A8E9E] hover:text-white text-[#1D1E20] transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={16} />
                 </a>
                 <a
                   href="mailto:info@ymsstudio.id"
-                  className="p-2 rounded-lg bg-foreground/10 hover:bg-foreground/20 text-foreground transition-colors duration-300"
+                  className="p-2 rounded-lg bg-white hover:bg-[#2A8E9E] hover:text-white text-[#1D1E20] transition-colors duration-300"
                   aria-label="Email"
                 >
                   <Mail size={16} />
@@ -58,13 +58,13 @@ export default function Footer() {
 
             {/* Services */}
             <div>
-              <h4 className="font-semibold text-foreground text-sm mb-3">Layanan</h4>
+              <h4 className="font-semibold text-[#1D1E20] text-sm mb-3">Layanan</h4>
               <ul className="space-y-2">
                 {["Website WordPress", "Toko Online / E-Commerce", "Company Profile", "Custom Development"].map((item) => (
                   <li key={item}>
                     <a
                       href="#services"
-                      className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                      className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
                     >
                       {item}
                     </a>
@@ -75,7 +75,7 @@ export default function Footer() {
 
             {/* Company */}
             <div>
-              <h4 className="font-semibold text-foreground text-sm mb-3">Navigasi</h4>
+              <h4 className="font-semibold text-[#1D1E20] text-sm mb-3">Navigasi</h4>
               <ul className="space-y-2">
                 {[
                   { name: "Beranda", href: "#home" },
@@ -86,7 +86,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                      className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
                     >
                       {item.name}
                     </a>
@@ -97,14 +97,14 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h4 className="font-semibold text-foreground text-sm mb-3">Hubungi</h4>
+              <h4 className="font-semibold text-[#1D1E20] text-sm mb-3">Hubungi</h4>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="https://wa.me/6283822640883"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center gap-2"
+                    className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300 flex items-center gap-2"
                   >
                     <MessageCircle size={14} />
                     +62 838-2264-0883
@@ -113,32 +113,32 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:info@ymsstudio.id"
-                    className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                    className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
                   >
                     info@ymsstudio.id
                   </a>
                 </li>
-                <li className="text-xs text-muted-foreground pt-2">Siap untuk proyek baru</li>
+                <li className="text-xs text-[#1D1E20]/60 pt-2">Siap untuk proyek baru</li>
               </ul>
             </div>
           </div>
 
           {/* Divider */}
-          <div className="border-t border-border/30"></div>
+          <div className="border-t border-[#2A8E9E]/20"></div>
 
           {/* Bottom Footer */}
           <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-muted-foreground">© {currentYear} YMS Studio. Semua hak dilindungi.</p>
+            <p className="text-xs text-[#1D1E20]/60">© {currentYear} YMS Studio. Semua hak dilindungi.</p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
               >
                 Kebijakan Privasi
               </a>
               <a
                 href="#"
-                className="text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
               >
                 Syarat Layanan
               </a>

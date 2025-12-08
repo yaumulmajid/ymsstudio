@@ -2,15 +2,13 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Moon, Sun } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 interface HeaderProps {
   isScrolled: boolean
-  isDark: boolean
-  toggleTheme: () => void
 }
 
-export default function Header({ isScrolled, isDark, toggleTheme }: HeaderProps) {
+export default function Header({ isScrolled }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [activeLink, setActiveLink] = useState("home")
 
@@ -25,11 +23,19 @@ export default function Header({ isScrolled, isDark, toggleTheme }: HeaderProps)
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "services", "portfolio", "pricing", "contact"]
+      const scrollPosition = window.scrollY + 150
+      
+      // Check if we're at the bottom of the page (footer)
+      if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
+        setActiveLink("contact")
+        return
+      }
+      
       const current = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
           const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
+          return rect.top <= 150 && rect.bottom >= 150
         }
         return false
       })
@@ -50,83 +56,80 @@ export default function Header({ isScrolled, isDark, toggleTheme }: HeaderProps)
   }
 
   return (
-    <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-border shadow-md" : "bg-transparent"
-      }`}
-    >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-foreground hover:opacity-80 transition-opacity">
-          YMS Studio
-        </Link>
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-4 lg:px-8 py-4 max-w-[1400px]">
+        <div className="flex items-center justify-between bg-white/90 backdrop-blur-2xl border-0 rounded-3xl px-8 h-14 lg:h-16 shadow-md">
+          {/* Logo */}
+          <Link href="/" className="text-lg lg:text-xl font-bold text-[#2A8E9E] shrink-0">
+            YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/50 font-normal ml-0.5">Studio</sup>
+          </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
-                activeLink === link.href.replace("#", "")
-                  ? "text-foreground bg-foreground/10"
-                  : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-              }`}
+          {/* Desktop Navigation - Center */}
+          <div className="hidden lg:flex items-center justify-center gap-8 flex-1">
+            {navLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => scrollToSection(link.href)}
+                className={`text-sm font-semibold transition-colors ${
+                  activeLink === link.href.replace("#", "")
+                    ? "text-[#2A8E9E]"
+                    : "text-[#1D1E20]/40 hover:text-[#1D1E20]/70"
+                }`}
+              >
+                {link.name}
+              </button>
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="hidden lg:flex items-center shrink-0">
+            <a
+              href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold rounded-full px-8 py-2.5 bg-[#2A8E9E] hover:bg-[#248795] text-white transition-all duration-300 shadow-sm"
             >
-              {link.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Right Actions */}
-        <div className="flex items-center gap-3">
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="p-2.5 rounded-lg hover:bg-foreground/10 transition-colors text-foreground"
-            aria-label="Toggle tema"
-          >
-            {isDark ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
-          <a
-            href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:block bg-foreground hover:bg-foreground/90 text-background px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg active:scale-95"
-          >
-            Konsultasi
-          </a>
+              Konsultasi
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 text-foreground" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          <button
+            className="lg:hidden p-2 text-[#1D1E20]"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
-      </nav>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-border px-4 py-4 space-y-2 animate-fade-in">
-          {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className="block w-full text-left px-4 py-2.5 text-sm font-medium text-foreground hover:text-foreground hover:bg-foreground/10 rounded-lg transition-colors"
-            >
-              {link.name}
-            </button>
-          ))}
-          <a
-            href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full text-center bg-foreground hover:bg-foreground/90 text-background px-4 py-2.5 rounded-lg text-sm font-semibold transition-colors mt-4"
-          >
-            Konsultasi
-          </a>
-        </div>
-      )}
-    </header>
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="lg:hidden mt-2 bg-white/70 backdrop-blur-2xl border-0 rounded-2xl overflow-hidden shadow-sm animate-fade-in">
+            <div className="p-4 space-y-3">
+              {navLinks.map((link) => (
+                <button
+                  key={link.name}
+                  onClick={() => scrollToSection(link.href)}
+                  className="block w-full text-left text-sm font-medium text-[#1D1E20]/50 hover:text-[#1D1E20]/80 transition-colors py-2"
+                >
+                  {link.name}
+                </button>
+              ))}
+              <div className="pt-3 border-t border-[#1D1E20]/5">
+                <a
+                  href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center rounded-full py-2 bg-[#2A8E9E] hover:bg-[#180D39] text-white text-sm font-medium transition-colors"
+                >
+                  Konsultasi
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
   )
 }

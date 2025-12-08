@@ -1,79 +1,41 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
-  /* Putih-Hitam Theme - Grayscale */
-  --background: oklch(0.98 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.88 0.05 0);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.94 0 0);
-  --muted-foreground: oklch(0.48 0 0);
-  --accent: oklch(0.25 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.15 0 0);
-  --chart-1: oklch(0.15 0 0);
-  --chart-2: oklch(0.3 0 0);
-  --chart-3: oklch(0.45 0 0);
-  --chart-4: oklch(0.6 0 0);
-  --chart-5: oklch(0.75 0 0);
+  /* Finpay Color Scheme */
+  --background: #FFFFFF;
+  --foreground: #1D1E20;
+  --card: #FFFFFF;
+  --card-foreground: #1D1E20;
+  --popover: #FFFFFF;
+  --popover-foreground: #1D1E20;
+  --primary: #2A8E9E;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E9F3F4;
+  --secondary-foreground: #1D1E20;
+  --muted: #F5F5F5;
+  --muted-foreground: rgba(29, 30, 32, 0.6);
+  --accent: #180D39;
+  --accent-foreground: #FFFFFF;
+  --destructive: #dc2626;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(42, 142, 158, 0.2);
+  --input: rgba(42, 142, 158, 0.2);
+  --ring: #2A8E9E;
+  --chart-1: #2A8E9E;
+  --chart-2: #180D39;
+  --chart-3: #E9F3F4;
+  --chart-4: rgba(42, 142, 158, 0.6);
+  --chart-5: rgba(24, 13, 57, 0.6);
   --radius: 0.625rem;
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.15 0 0);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.88 0.05 0);
-  --sidebar-accent-foreground: oklch(0.15 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.15 0 0);
-}
-
-.dark {
-  /* Dark Mode - Grayscale */
-  --background: oklch(0.12 0 0);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.18 0 0);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.18 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.95 0 0);
-  --primary-foreground: oklch(0.12 0 0);
-  --secondary: oklch(0.25 0.08 0);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.85 0 0);
-  --accent-foreground: oklch(0.12 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.28 0 0);
-  --input: oklch(0.28 0 0);
-  --ring: oklch(0.95 0 0);
-  --chart-1: oklch(0.95 0 0);
-  --chart-2: oklch(0.75 0 0);
-  --chart-3: oklch(0.55 0 0);
-  --chart-4: oklch(0.35 0 0);
-  --chart-5: oklch(0.2 0 0);
-  --sidebar: oklch(0.18 0 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.95 0 0);
-  --sidebar-primary-foreground: oklch(0.12 0 0);
-  --sidebar-accent: oklch(0.25 0.08 0);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.28 0 0);
-  --sidebar-ring: oklch(0.95 0 0);
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1D1E20;
+  --sidebar-primary: #2A8E9E;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E9F3F4;
+  --sidebar-accent-foreground: #1D1E20;
+  --sidebar-border: rgba(42, 142, 158, 0.2);
+  --sidebar-ring: #2A8E9E;
 }
 
 @theme inline {
@@ -198,10 +160,10 @@ html {
 @keyframes pulse-glow {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(42, 142, 158, 0.7);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px rgba(42, 142, 158, 0);
   }
 }
 
