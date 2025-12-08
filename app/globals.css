@@ -255,3 +255,19 @@ html {
 .delay-1000 {
   animation-delay: 1000ms;
 }
+
+@keyframes ping-smooth {
+  0% {
+    box-shadow: 0 0 0 0 rgba(42, 142, 158, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(42, 142, 158, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(42, 142, 158, 0);
+  }
+}
+
+.animate-ping-smooth {
+  animation: ping-smooth 2s infinite;
+}
