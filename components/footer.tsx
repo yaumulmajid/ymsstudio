@@ -20,7 +20,7 @@ export default function Footer() {
             {/* Brand */}
             <div>
                 <Link href="/" className="text-lg lg:text-xl font-bold text-[#2A8E9E] shrink-0">
-                    YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Studio</sup>
+                    YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Web Studio</sup>
                 </Link>
               <p className="text-xs text-[#1D1E20]/60 mb-4 leading-relaxed">
                 Jasa pembuatan website profesional untuk UMKM dan bisnis. Spesialis WordPress & Custom Development dengan harga terjangkau dan hasil maksimal.

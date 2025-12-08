@@ -61,7 +61,7 @@ export default function Header({ isScrolled }: HeaderProps) {
         <div className="flex items-center justify-between bg-white/95 backdrop-blur-2xl border border-[#2A8E9E]/10 rounded-2xl px-8 h-14 lg:h-16 shadow-sm">
           {/* Logo */}
           <Link href="/" className="text-lg lg:text-xl font-bold text-[#2A8E9E] shrink-0">
-            YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Studio</sup>
+            YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Web Studio</sup>
           </Link>
 
           {/* Desktop Navigation - Center */}
