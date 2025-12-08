@@ -1,6 +1,7 @@
 "use client"
 
 import { Linkedin, Mail, Instagram, MessageCircle } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -18,7 +19,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             {/* Brand */}
             <div>
-              <h3 className="text-lg font-bold text-[#1D1E20] mb-3">YMS Studio</h3>
+                <Link href="/" className="text-lg lg:text-xl font-bold text-[#2A8E9E] shrink-0">
+                    YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Studio</sup>
+                </Link>
               <p className="text-xs text-[#1D1E20]/60 mb-4 leading-relaxed">
                 Jasa pembuatan website profesional untuk UMKM dan bisnis. Spesialis WordPress & Custom Development dengan harga terjangkau dan hasil maksimal.
               </p>
@@ -107,7 +110,7 @@ export default function Footer() {
                     className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300 flex items-center gap-2"
                   >
                     <MessageCircle size={14} />
-                    +62 838-2264-0883
+                    Whatsapp
                   </a>
                 </li>
                 <li>
