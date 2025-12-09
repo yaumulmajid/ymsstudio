@@ -20,21 +20,35 @@ jobs:
         username: ${{ secrets.VPS_USERNAME }}
         key: ${{ secrets.VPS_SSH_KEY }}
         port: ${{ secrets.VPS_PORT }}
-        script: |
+script: |
           echo "🚀 Starting deployment..."
+          
           cd /var/www/ymsstudio
+          
           echo "📦 Pulling latest code from GitHub..."
           git pull origin main
+          
           echo "📚 Installing dependencies..."
           npm install --production=false
+          
           if [ ! -z "${{ secrets.ENV_FILE }}" ]; then
             echo "🔐 Updating environment variables..."
             echo "${{ secrets.ENV_FILE }}" > .env
           fi
+          
           echo "🔨 Building Next.js application..."
           npm run build
-          echo "🔄 Restarting application..."
-          pm2 restart ymsstudio || pm2 start npm --name "ymsstudio" -- start
+          
+          echo "🛑 Stopping old process..."
+          pm2 stop ymsstudio || true
+          
+          echo "🧹 Killing port 3000..."
+          sudo fuser -k 3000/tcp || true
+          sleep 2
+          
+          echo "🔄 Starting application..."
+          pm2 start npm --name "ymsstudio" -- start || pm2 restart ymsstudio
+
           pm2 save
           echo "✅ Deployment completed successfully!"
     - name: Deployment Status
