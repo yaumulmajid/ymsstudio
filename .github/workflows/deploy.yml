@@ -43,6 +43,10 @@ jobs:
           
           echo "🛑 Stopping old process..."
           pm2 stop ymsstudio || true
+
+          echo "🧹 Killing port 3000..."
+          sudo fuser -k 3000/tcp 2>/dev/null || true
+          sleep 3
           
           echo "🔄 Starting application..."
           pm2 start npm --name "ymsstudio" -- start || pm2 restart ymsstudio
