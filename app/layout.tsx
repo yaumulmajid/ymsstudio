@@ -427,12 +427,12 @@ export default function RootLayout({
         {children}
         
         {/* ✅ WhatsApp Floating Button */}
-        <a
-          href="https://wa.me/6283822640883?text=Halo%20YMS%20Studio%2C%20saya%20ingin%20konsultasi%20tentang%20jasa%20pembuatan%20website"
+<a
+          href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-[999] flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-lg text-white transition-transform duration-300 hover:scale-110"
-          aria-label="Konsultasi via WhatsApp"
+          className="fixed bottom-6 right-6 z-[999] flex items-center justify-center w-14 h-14 bg-[#2A8E9E] rounded-full shadow-lg text-white transition-all duration-300 hover:scale-110 hover:shadow-xl animate-ping-smooth"
+          aria-label="Hubungi kami via WhatsApp"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
