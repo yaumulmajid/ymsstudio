@@ -10,9 +10,11 @@ jobs:
   deploy:
     name: Deploy to Sumopod VPS
     runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
+      
     - name: Deploy to VPS via SSH
       uses: appleboy/ssh-action@v1.0.3
       with:
@@ -20,7 +22,7 @@ jobs:
         username: ${{ secrets.VPS_USERNAME }}
         key: ${{ secrets.VPS_SSH_KEY }}
         port: ${{ secrets.VPS_PORT }}
-script: |
+        script: |
           echo "🚀 Starting deployment..."
           
           cd /var/www/ymsstudio
@@ -42,19 +44,18 @@ script: |
           echo "🛑 Stopping old process..."
           pm2 stop ymsstudio || true
           
-          echo "🧹 Killing port 3000..."
-          sudo fuser -k 3000/tcp || true
-          sleep 2
-          
           echo "🔄 Starting application..."
           pm2 start npm --name "ymsstudio" -- start || pm2 restart ymsstudio
-
+          
           pm2 save
+          
           echo "✅ Deployment completed successfully!"
+          
     - name: Deployment Status
       if: success()
       run: |
         echo "🎉 Deployment to ymsstudio.co.id successful!"
+        
     - name: Deployment Failed
       if: failure()
       run: |
