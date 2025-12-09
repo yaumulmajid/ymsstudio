@@ -8,7 +8,7 @@ const _inter = Inter({ subsets: ["latin"], display: "swap" })
 const _geistMono = Geist_Mono({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "YMS Web Studio - Jasa Pembuatan Website Murah Bekasi & Indonesia | Mulai 700rb",
+  title: "YMS Studio - Jasa Pembuatan Website Murah Bekasi & Indonesia | Mulai 700rb",
   description:
     "⭐ Jasa Website Profesional Harga Murah! WordPress, Toko Online, Company Profile, Landing Page. FREE Konsultasi & Domain. 20+ Klien Puas. Fast Response WA: 0838-2264-0883",
   keywords: [
