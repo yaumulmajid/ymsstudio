@@ -131,7 +131,7 @@ export default function Footer() {
 
           {/* Bottom Footer */}
           <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-[#1D1E20]/60">© {currentYear} YMS Studio. Semua hak dilindungi.</p>
+            <p className="text-xs text-[#1D1E20]/60">© {currentYear} YMS Web Studio. Semua hak dilindungi.</p>
             <div className="flex gap-4">
               <a
                 href="#"
