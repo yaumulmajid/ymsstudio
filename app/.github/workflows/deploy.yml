@@ -1,0 +1,47 @@
+name: Deploy Next.js to VPS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Sumopod VPS
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - name: Deploy to VPS via SSH
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USERNAME }}
+        key: ${{ secrets.VPS_SSH_KEY }}
+        port: ${{ secrets.VPS_PORT }}
+        script: |
+          echo "🚀 Starting deployment..."
+          cd /var/www/ymsstudio
+          echo "📦 Pulling latest code from GitHub..."
+          git pull origin main
+          echo "📚 Installing dependencies..."
+          npm install --production=false
+          if [ ! -z "${{ secrets.ENV_FILE }}" ]; then
+            echo "🔐 Updating environment variables..."
+            echo "${{ secrets.ENV_FILE }}" > .env
+          fi
+          echo "🔨 Building Next.js application..."
+          npm run build
+          echo "🔄 Restarting application..."
+          pm2 restart ymsstudio || pm2 start npm --name "ymsstudio" -- start
+          pm2 save
+          echo "✅ Deployment completed successfully!"
+    - name: Deployment Status
+      if: success()
+      run: |
+        echo "🎉 Deployment to ymsstudio.co.id successful!"
+    - name: Deployment Failed
+      if: failure()
+      run: |
+        echo "❌ Deployment failed. Check the logs above for details."
