@@ -1,0 +1,32 @@
+# robots.txt untuk ymsstudio.co.id
+# Website: https://ymsstudio.co.id
+# Last Updated: 2024-12-09
+
+# Mengizinkan semua search engine crawler
+User-agent: *
+Allow: /
+
+# Block Next.js internal files
+Disallow: /_next/static/
+Disallow: /api/
+
+# Block system files
+Disallow: /*.json$
+Disallow: /public/*.webp$
+Disallow: /public/*.jpg$
+Disallow: /public/*.png$
+Disallow: /public/*.svg$
+
+# Allow image indexing (penting untuk SEO)
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap location
+Sitemap: https://ymsstudio.co.id/sitemap.xml
+
+# Crawl rate optimization
+Crawl-delay: 1
