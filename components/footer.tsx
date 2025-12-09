@@ -113,14 +113,6 @@ export default function Footer() {
                     Whatsapp
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="mailto:info@ymsstudio.id"
-                    className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
-                  >
-                    info@ymsstudio.co.id
-                  </a>
-                </li>
                 <li className="text-xs text-[#1D1E20]/60 pt-2">Siap untuk proyek baru</li>
               </ul>
             </div>
