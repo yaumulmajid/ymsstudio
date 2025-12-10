@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Jasa Website Murah Bekasi & Indonesia | Mulai 700rb - YMS Studio",
+  title: "Jasa Website Profesional Bekasi & Indonesia | Mulai 700rb - YMS Studio",
   
   description: "Jasa pembuatan website profesional untuk UMKM & bisnis di Bekasi. WordPress, Toko Online, Company Profile mulai 700rb. Garansi & konsultasi gratis. 20+ klien puas.",
  
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   // ✅ TWITTER CARD
   twitter: {
     card: "summary_large_image",
-    title: "Jasa Website Murah Bekasi - YMS Studio",
+    title: "Jasa Website Profesional Bekasi - YMS Studio",
     description: "Website profesional mulai 700rb. WordPress, Toko Online, Company Profile. Konsultasi gratis!",
     images: ["https://ymsstudio.co.id/logo.webp"],
     creator: "@ymsstudio",
