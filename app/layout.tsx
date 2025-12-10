@@ -12,17 +12,11 @@ const inter = Inter({
   weight: ['400', '500', '600', '700']
 })
 
-// ============================================
-// 🎯 SEO OPTIMIZED METADATA
-// ============================================
 export const metadata: Metadata = {
-  // ✅ TITLE: Keywords di depan, Brand di belakang
   title: "Jasa Website Murah Bekasi & Indonesia | Mulai 700rb - YMS Studio",
   
-  // ✅ DESCRIPTION: 155 karakter, fokus value proposition
   description: "Jasa pembuatan website profesional untuk UMKM & bisnis di Bekasi. WordPress, Toko Online, Company Profile mulai 700rb. Garansi & konsultasi gratis. 20+ klien puas.",
-  
-  // ✅ KEYWORDS: Fokus 8 keywords utama (NO SPAM!)
+ 
   keywords: [
     "jasa website bekasi",
     "jasa pembuatan website murah",
@@ -46,9 +40,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   
-  // ✅ OPEN GRAPH: Social Media Optimization
   openGraph: {
-    title: "Jasa Website Murah Bekasi & Indonesia | YMS Studio",
+    title: "Jasa Website Profesional Bekasi & Indonesia | YMS Studio",
     description: "Website profesional untuk UMKM & bisnis. WordPress, Toko Online, Company Profile mulai 700rb. Konsultasi gratis!",
     type: "website",
     locale: "id_ID",
@@ -56,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "YMS Studio",
     images: [
       {
-        url: "https://ymsstudio.co.id/og-image.png",
+        url: "https://ymsstudio.co.id/logo.webp",
         width: 1200,
         height: 630,
         alt: "YMS Studio - Jasa Website Profesional Bekasi",
@@ -70,12 +63,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jasa Website Murah Bekasi - YMS Studio",
     description: "Website profesional mulai 700rb. WordPress, Toko Online, Company Profile. Konsultasi gratis!",
-    images: ["https://ymsstudio.co.id/og-image.png"],
+    images: ["https://ymsstudio.co.id/logo.webp"],
     creator: "@ymsstudio",
     site: "@ymsstudio",
   },
   
-  // ✅ ROBOTS: Indexing maksimal
   robots: {
     index: true,
     follow: true,
@@ -90,12 +82,8 @@ export const metadata: Metadata = {
     },
   },
   
-  // ✅ VERIFICATION: Google Search Console
   verification: {
-    google: "your-google-verification-code-here", // GANTI dengan code dari GSC
-    // Opsional untuk search engine lain:
-    // yandex: "your-yandex-code",
-    // bing: "your-bing-code",
+    google: "R7wsRT4vlDQVhRu5rTGbN-vEVkJ3p7br9MzXMLWBcvw",
   },
   
   // ✅ CANONICAL: Avoid duplicate content
@@ -153,25 +141,23 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://ymsstudio.co.id/#organization",
+              "@id": "https://ymsstudio.co.id/",
               name: "YMS Studio",
-              image: "https://ymsstudio.co.id/logo.png",
-              logo: "https://ymsstudio.co.id/logo.png",
+              image: "https://ymsstudio.co.id/logo.webp",
+              logo: "https://ymsstudio.co.id/logo.webp",
               url: "https://ymsstudio.co.id",
               telephone: "+6283822640883",
               priceRange: "Rp 700.000 - Rp 50.000.000",
               
-              // Address untuk Local SEO
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Jl. Contoh No. 123", // GANTI dengan alamat asli
+                streetAddress: "Blok A5 No 29, Jl. Wimbledon Raya, Jatireja, Kec. Cikarang Tim., Kabupaten Bekasi, Jawa Barat 17533",
                 addressLocality: "Bekasi",
                 addressRegion: "Jawa Barat",
-                postalCode: "17510", // GANTI dengan kode pos
+                postalCode: "17533",
                 addressCountry: "ID",
               },
-              
-              // Lokasi GPS (penting untuk Google Maps)
+            
               geo: {
                 "@type": "GeoCoordinates",
                 latitude: "-6.238270",
@@ -372,9 +358,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* ============================================ */}
-        {/* 🌐 SCHEMA 3: WEBSITE (Basic requirement) */}
-        {/* ============================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -400,10 +383,6 @@ export default function RootLayout({
             }),
           }}
         />
-
-        {/* ============================================ */}
-        {/* 📊 SCHEMA 4: BREADCRUMB (Navigation) */}
-        {/* ============================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -425,8 +404,6 @@ export default function RootLayout({
 
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
-        
-        {/* ✅ WhatsApp Floating Button */}
 <a
           href="https://wa.me/6283822640883?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20website"
           target="_blank"
