@@ -325,7 +325,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <body className={`${inter.variable} antialiased`}>
         {children}
-        <Analytics />
         <WhatsAppButton />
       </body>
     </html>
