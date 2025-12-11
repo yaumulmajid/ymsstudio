@@ -69,12 +69,12 @@ export default function About() {
                   </div>
 
                   <div className="text-center border-x border-[#2A8E9E]/10">
-                    <p className="text-xl font-bold text-[#1D1E20]">30+</p>
+                    <p className="text-xl font-bold text-[#1D1E20]">20+</p>
                     <p className="text-xs text-[#1D1E20]/60">Projects</p>
                   </div>
 
                   <div className="text-center">
-                    <p className="text-xl font-bold text-[#1D1E20]">30+</p>
+                    <p className="text-xl font-bold text-[#1D1E20]">20+</p>
                     <p className="text-xs text-[#1D1E20]/60">Clients</p>
                   </div>
                 </div>

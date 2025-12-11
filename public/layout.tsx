@@ -100,10 +100,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
 
+        {/* ============================================================ */}
+        {/* 🔥 FAVICON + LOGO AGAR MUNCUL DI GOOGLE SEARCH */}
+        {/* ============================================================ */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.webp" type="image/svg+xml" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#2A8E9E" />
+
+        {/* ============================================================ */}
+        {/* 🔥 SCHEMA — WAJIB UNTUK LOGO MUNCUL DI HASIL PENCARIAN */}
+        {/* ============================================================ */}
+
+        {/* ORGANIZATION LOGO (WAJIB untuk Google menampilkan logo) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -143,76 +152,71 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-       <script
+        {/* LOCAL BUSINESS (punyamu tetap dipertahankan) */}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://ymsstudio.co.id/#services",
-              "name": "YMS Studio - Jasa Pembuatan Website UMKM",
-              "url": "https://ymsstudio.co.id",
-              "image": "https://ymsstudio.co.id/logo.webp",
-              "logo": "https://ymsstudio.co.id/logo.webp",
-              "description":
-                "Jasa pembuatan website profesional untuk UMKM Indonesia. Cepat, mobile-friendly, SEO-ready, harga terjangkau mulai 700rb, dan bergaransi.",
-              "telephone": "+6283822640883",
-              "priceRange": "Rp 700.000 - Rp 2.550.000",
+              "@id": "https://ymsstudio.co.id/#umkm",
+              name: "YMS Studio - Website UMKM Indonesia",
+              image: "https://ymsstudio.co.id/logo.webp",
+              logo: "https://ymsstudio.co.id/logo.webp",
+              url: "https://ymsstudio.co.id",
+              telephone: "+6283822640883",
 
-              "address": {
+              description:
+                "Jasa pembuatan website profesional untuk UMKM Indonesia. Toko online, company profile, landing page mulai 700rb. Cepat, mobile-friendly, dan bergaransi.",
+
+              priceRange: "Rp 700.000 - Rp 2.550.000",
+
+              address: {
                 "@type": "PostalAddress",
-                "streetAddress":
+                streetAddress:
                   "Blok A5 No 29, Jl. Wimbledon Raya, Jatireja, Cikarang Timur",
-                "addressLocality": "Bekasi",
-                "addressRegion": "Jawa Barat",
-                "postalCode": "17533",
-                "addressCountry": "ID"
+                addressLocality: "Bekasi",
+                addressRegion: "Jawa Barat",
+                postalCode: "17533",
+                addressCountry: "ID",
               },
 
-              "geo": {
+              geo: {
                 "@type": "GeoCoordinates",
-                "latitude": -6.238270,
-                "longitude": 106.975571
+                latitude: "-6.238270",
+                longitude: "106.975571",
               },
 
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                  ],
-                  "opens": "08:00",
-                  "closes": "20:00"
-                }
+              serviceType: [
+                "Website UMKM",
+                "Toko Online UMKM",
+                "Company Profile UMKM",
+                "Landing Page UMKM",
+                "Website Bisnis Kecil",
               ],
 
-              "sameAs": [
-                "https://www.instagram.com/ymsstudios/",
-                "https://www.facebook.com/ymsstudio.web/",
-                "https://wa.me/6283822640883"
-              ],
+              areaServed: "Indonesia",
 
-              "serviceType": [
-                "Jasa Website UMKM",
-                "Jasa Landing Page",
-                "Jasa Toko Online",
-                "Jasa Company Profile",
-                "Jasa WordPress",
-                "Jasa Website Bisnis Kecil"
-              ],
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "08:00",
+                closes: "20:00",
+              },
 
-              "aggregateRating": {
+              aggregateRating: {
                 "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "50"
-              }
-            })
+                ratingValue: "4.9",
+                reviewCount: "50",
+              },
+            }),
           }}
         />
       </head>
