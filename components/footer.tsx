@@ -20,9 +20,9 @@ export default function Footer() {
             {/* Brand */}
             <div>
                 <Link href="/" className="text-lg lg:text-xl font-bold text-[#2A8E9E] shrink-0">
-                    YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/70 font-normal ml-0.5">Web Studio</sup>
+                    YMS<span className="text-[#1D1E20]">.</span><sup className="text-[10px] text-[#1D1E20]/90 font-normal ml-0.5">Web Studio</sup>
                 </Link>
-              <p className="text-xs text-[#1D1E20]/60 mb-4 leading-relaxed">
+              <p className="text-xs text-[#1D1E20]/80 mb-4 leading-relaxed">
                 Jasa pembuatan website profesional untuk UMKM dan bisnis. Spesialis WordPress & Custom Development dengan harga terjangkau dan hasil maksimal.
               </p>
               <div className="flex gap-2.5">
@@ -67,7 +67,7 @@ export default function Footer() {
                   <li key={item}>
                     <a
                       href="#services"
-                      className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
+                      className="text-xs text-[#1D1E20]/80 hover:text-[#2A8E9E] transition-colors duration-300"
                     >
                       {item}
                     </a>
@@ -89,7 +89,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
+                      className="text-xs text-[#1D1E20]/90 hover:text-[#2A8E9E] transition-colors duration-300"
                     >
                       {item.name}
                     </a>
@@ -107,13 +107,13 @@ export default function Footer() {
                     href="https://wa.me/6283822640883"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300 flex items-center gap-2"
+                    className="text-xs text-[#1D1E20]/90 hover:text-[#2A8E9E] transition-colors duration-300 flex items-center gap-2"
                   >
                     <MessageCircle size={14} />
                     Whatsapp
                   </a>
                 </li>
-                <li className="text-xs text-[#1D1E20]/60 pt-2">Siap untuk proyek baru</li>
+                <li className="text-xs text-[#1D1E20]/90 pt-2">Siap untuk proyek baru</li>
               </ul>
             </div>
           </div>
@@ -123,17 +123,17 @@ export default function Footer() {
 
           {/* Bottom Footer */}
           <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-[#1D1E20]/60">© {currentYear} YMS Web Studio. Semua hak dilindungi.</p>
+            <p className="text-xs text-[#1D1E20]/90">© {currentYear} YMS Web Studio. Semua hak dilindungi.</p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
+                className="text-xs text-[#1D1E20]/90 hover:text-[#2A8E9E] transition-colors duration-300"
               >
                 Kebijakan Privasi
               </a>
               <a
                 href="#"
-                className="text-xs text-[#1D1E20]/60 hover:text-[#2A8E9E] transition-colors duration-300"
+                className="text-xs text-[#1D1E20]/90 hover:text-[#2A8E9E] transition-colors duration-300"
               >
                 Syarat Layanan
               </a>

@@ -117,7 +117,7 @@ export default function Pricing() {
             Paket Jasa Website
           </h2>
           <p
-            className={`text-base text-[#1D1E20]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-base text-[#1D1E20]/95 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket dapat disesuaikan dengan kebutuhan spesifik.
           </p>
@@ -150,7 +150,7 @@ export default function Pricing() {
                   {/* Tier Info */}
                   <div className="mb-6">
                     <h3 className="text-lg font-bold text-[#1D1E20] mb-1">{tier.name}</h3>
-                    <p className="text-xs text-[#1D1E20]/60 mb-4">{tier.description}</p>
+                    <p className="text-xs text-[#1D1E20]/85 mb-4">{tier.description}</p>
                     <div className="mb-2">
                       <span className="text-3xl md:text-4xl font-bold text-[#1D1E20]">{tier.price}</span>
                     </div>

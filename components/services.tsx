@@ -109,7 +109,7 @@ export default function Services() {
                   <h3 className="text-base font-bold text-[#1D1E20] mb-2 group-hover:opacity-80 transition-opacity duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-[#1D1E20]/60 leading-relaxed">{service.description}</p>
+                  <p className="text-sm text-[#1D1E20]/80 leading-relaxed">{service.description}</p>
 
                   {/* Arrow */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300">

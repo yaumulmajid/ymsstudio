@@ -39,9 +39,9 @@ export default function CTA() {
           <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#1D1E20] mb-4">
             Siap Meningkatkan
             <br />
-            <span className="text-[#1D1E20]/70">Kehadiran Digital Anda?</span>
+            <span className="text-[#1D1E20]/85">Kehadiran Digital Anda?</span>
           </h2>
-          <p className="text-base md:text-lg text-[#1D1E20]/60 max-w-2xl mx-auto mb-8">
+          <p className="text-base md:text-lg text-[#1D1E20]/80 max-w-2xl mx-auto mb-8">
             Mari ciptakan sesuatu yang luar biasa bersama. Hubungi saya untuk mendiskusikan proyek Anda dan bagaimana
             saya dapat membantu.
           </p>

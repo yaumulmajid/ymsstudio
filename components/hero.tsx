@@ -85,7 +85,7 @@ export default function Hero() {
             </header>
 
             {/* Description */}
-            <p className="text-base md:text-m text-[#1D1E20]/70 leading-relaxed max-w-xl">
+            <p className="text-base md:text-m text-[#1D1E20]/90 leading-relaxed max-w-xl">
               Website <strong className="text-[#1D1E20] font-semibold">cepat dan mobile-friendly</strong> untuk UMKM.
               Dari landing page hingga toko online dengan{" "}
               <strong className="text-[#1D1E20] font-semibold">WordPress atau Custom Development</strong>.
@@ -105,7 +105,7 @@ export default function Hero() {
                 />
                 <div>
                   <h3 className="text-xs font-semibold text-[#1D1E20]">Selesai 3 Hari</h3>
-                  <p className="text-xs text-[#1D1E20]/60">Kerja cepat dan efisien</p>
+                  <p className="text-xs text-[#1D1E20]/90">Kerja cepat dan efisien</p>
                 </div>
               </div>
               
@@ -156,7 +156,7 @@ export default function Hero() {
                   href="https://wa.me/6283822640883?text=Halo%20Yaumul%2C%20saya%20pelaku%20UMKM%20mau%20konsultasi%20pembuatan%20website%20untuk%20usaha%20saya.%20Bisa%20bantu%3F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative bg-[#2A8E9E] hover:bg-[#180D39] text-white px-6 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 hover:shadow-2xl hover:shadow-[#2A8E9E]/20 overflow-hidden focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
+                  className="group relative bg-[#2A8E9E] hover:bg-[#180D39] text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 hover:shadow-2xl hover:shadow-[#2A8E9E]/20 overflow-hidden focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
                   aria-label="Konsultasi gratis via WhatsApp - buka di tab baru"
                 >
                   <span className="relative z-10 flex items-center gap-2">
@@ -178,7 +178,7 @@ export default function Hero() {
                   aria-label="Lihat paket dan harga, mulai dari 799 ribu rupiah"
                 >
                   <span>Lihat Paket & Harga</span>
-                  <span className="text-xs font-normal opacity-70" aria-label="harga mulai">(Mulai 799rb)</span>
+                  <span className="text-xs font-normal opacity-80" aria-label="harga mulai">(Mulai 799rb)</span>
                 </button>
               </div>
             </nav>

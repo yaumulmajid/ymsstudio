@@ -65,17 +65,17 @@ export default function About() {
                 <div className="grid grid-cols-3 gap-4 w-full mb-6 pt-2">
                   <div className="text-center">
                     <p className="text-xl font-bold text-[#1D1E20]">3+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Years</p>
+                    <p className="text-xs text-[#1D1E20]/80">Years</p>
                   </div>
 
                   <div className="text-center border-x border-[#2A8E9E]/10">
                     <p className="text-xl font-bold text-[#1D1E20]">20+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Projects</p>
+                    <p className="text-xs text-[#1D1E20]/80">Projects</p>
                   </div>
 
                   <div className="text-center">
                     <p className="text-xl font-bold text-[#1D1E20]">20+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Clients</p>
+                    <p className="text-xs text-[#1D1E20]/80">Clients</p>
                   </div>
                 </div>
               </div>
@@ -89,16 +89,16 @@ export default function About() {
               👋 Hai! Saya Yaumul Majid
             </h2>
 
-            <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
+            <p className="text-sm md:text-base text-[#1D1E20]/90 leading-relaxed">
               Web Developer yang membantu UMKM & Startup tampil profesional di dunia digital dengan website yang modern dan efektif.
             </p>
 
             <div className="space-y-4 pt-2">
-              <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
+              <p className="text-sm md:text-base text-[#1D1E20]/90 leading-relaxed">
                 Dengan pengalaman 3+ tahun membangun website untuk puluhan bisnis, saya tahu cara membuat website yang tidak hanya bagus dilihat, tapi juga efektif mendatangkan pelanggan.
               </p>
 
-              <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
+              <p className="text-sm md:text-base text-[#1D1E20]/90 leading-relaxed">
                 Saya menggunakan <strong className="text-[#1D1E20]">WordPress</strong> untuk solusi cepat, dan <strong className="text-[#1D1E20]">Custom Development</strong> (Spring Boot, Laravel) untuk kebutuhan yang lebih spesifik.
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function About() {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <span className="text-[#2A8E9E] mt-0.5">✓</span>
-                  <span className="text-sm text-[#1D1E20]/70">{item}</span>
+                  <span className="text-sm text-[#1D1E20]/85">{item}</span>
                 </div>
               ))}
             </div>

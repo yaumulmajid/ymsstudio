@@ -112,7 +112,7 @@ export default function Projects() {
             <h2 className="text-lg font-bold text-[#1D1E20]">{selectedProject.title}</h2>
             <button
               onClick={() => setSelectedProject(null)}
-              className="text-[#1D1E20]/60 hover:text-[#1D1E20] transition-colors"
+              className="text-[#1D1E20]/80 hover:text-[#1D1E20] transition-colors"
             >
               <X size={20} />
             </button>
@@ -193,7 +193,7 @@ export default function Projects() {
             Proyek Unggulan
           </h2>
           <p
-            className={`text-base text-[#1D1E20]/70 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-base text-[#1D1E20]/90 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Beberapa website pilihan yang sudah saya kerjakan untuk berbagai bisnis.
           </p>
@@ -245,7 +245,7 @@ export default function Projects() {
                         {project.type}
                       </span>
                     </div>
-                    <p className="text-xs text-[#1D1E20]/60 mt-2">{project.description}</p>
+                    <p className="text-xs text-[#1D1E20]/80 mt-2">{project.description}</p>
                   </div>
 
                   {/* Tags */}
