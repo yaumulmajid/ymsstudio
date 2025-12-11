@@ -93,7 +93,7 @@ export default function Hero() {
             </p>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2">
+            <div className="grid grid-cols-2 gap-3 py-2">
               <h2 className="sr-only">Fitur Utama Layanan</h2>
               
               <div className="flex items-start gap-2">
@@ -118,7 +118,7 @@ export default function Hero() {
                 />
                 <div>
                   <h3 className="text-xs font-semibold text-[#1D1E20]">Garansi 100%</h3>
-                  <p className="text-xs text-[#1D1E20]/60">Uang kembali</p>
+                  <p className="text-xs text-[#1D1E20]/90">Uang kembali</p>
                 </div>
               </div>
               
@@ -131,7 +131,7 @@ export default function Hero() {
                 />
                 <div>
                   <h3 className="text-xs font-semibold text-[#1D1E20]">20+ UMKM Puas</h3>
-                  <p className="text-xs text-[#1D1E20]/60">Rating 4.9 dari 5</p>
+                  <p className="text-xs text-[#1D1E20]/90">Rating 4.9 dari 5</p>
                 </div>
               </div>
               
@@ -144,7 +144,7 @@ export default function Hero() {
                 />
                 <div>
                   <h3 className="text-xs font-semibold text-[#1D1E20]">Support 24/7</h3>
-                  <p className="text-xs text-[#1D1E20]/60">Via WhatsApp</p>
+                  <p className="text-xs text-[#1D1E20]/90">Via WhatsApp</p>
                 </div>
               </div>
             </div>
