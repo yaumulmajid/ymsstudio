@@ -105,6 +105,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
         <meta name="theme-color" content="#2A8E9E" />
 
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17737646735"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17737646735');
+            `,
+          }}
+        />
+
         {/* ============================================================
             ORGANIZATION SCHEMA
         ============================================================ */}
