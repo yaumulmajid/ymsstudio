@@ -204,7 +204,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "Jasa Toko Online",
                 "Jasa Company Profile",
                 "Jasa WordPress",
-                "Jasa Website Bisnis Kecil"
+                "Jasa Website Bisnis Kecil",
+                "Website",
+                "Jasa Website"
               ],
 
               "aggregateRating": {
@@ -220,8 +222,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} antialiased`}>
         {children}
         <Analytics />
-        {children}
-
         {/* Floating WhatsApp Button — Icon Only */}
         <a
           href="https://wa.me/6283822640883?text=Halo%20Yaumul%2C%20saya%20pelaku%20UMKM%20mau%20konsultasi%20pembuatan%20website%20untuk%20usaha%20saya.%20Bisa%20bantu%3F"
