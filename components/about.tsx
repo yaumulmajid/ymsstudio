@@ -18,7 +18,7 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-10 bg-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-[#2A8E9E]/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
