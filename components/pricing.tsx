@@ -98,8 +98,8 @@ export default function Pricing() {
     <section id="pricing" ref={sectionRef} className="relative py-16 md:py-24 bg-[#E9F3F4] overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-0 w-96 h-96 bg-[#1F6B77]/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-0 w-96 h-96 bg-[#0F0F10]/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-0 w-96 h-96 bg-[#2A8E9E]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-0 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -112,12 +112,12 @@ export default function Pricing() {
             Pricing Plan
           </div>
           <h2
-            className={`text-3xl md:text-4xl font-bold text-[#404040] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-3xl md:text-4xl font-bold text-[#1D1E20] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Paket Jasa Website
           </h2>
           <p
-            className={`text-base text-[#404040] max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-base text-[#1D1E20]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket dapat disesuaikan dengan kebutuhan spesifik.
           </p>
@@ -140,7 +140,7 @@ export default function Pricing() {
                 {/* Featured Badge */}
                 {tier.featured && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-[#1F6B77] text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="bg-[#2A8E9E] text-white px-3 py-1 rounded-full text-xs font-semibold">
                       Popular
                     </div>
                   </div>
@@ -149,10 +149,10 @@ export default function Pricing() {
                 <div className="p-6 md:p-8 flex flex-col h-full">
                   {/* Tier Info */}
                   <div className="mb-6">
-                    <h3 className="text-lg font-bold text-[#404040] mb-1">{tier.name}</h3>
-                    <p className="text-xs text-[#404040]/60 mb-4">{tier.description}</p>
+                    <h3 className="text-lg font-bold text-[#1D1E20] mb-1">{tier.name}</h3>
+                    <p className="text-xs text-[#1D1E20]/60 mb-4">{tier.description}</p>
                     <div className="mb-2">
-                      <span className="text-3xl md:text-4xl font-bold text-[#404040]">{tier.price}</span>
+                      <span className="text-3xl md:text-4xl font-bold text-[#1D1E20]">{tier.price}</span>
                     </div>
                   </div>
 
@@ -163,8 +163,8 @@ export default function Pricing() {
                     rel="noopener noreferrer"
                     className={`w-full py-2.5 rounded-lg font-medium text-sm transition-all duration-300 mb-6 block text-center ${
                       tier.featured
-                        ? "bg-[#1F6B77] text-white hover:bg-[#180D39] hover:shadow-lg hover:shadow-[#1F6B77]/30 active:scale-95"
-                        : "bg-[#1F6B77]/10 text-[#404040] hover:bg-[#1F6B77]/20 border border-[#1F6B77]/20 active:scale-95"
+                        ? "bg-[#2A8E9E] text-white hover:bg-[#180D39] hover:shadow-lg hover:shadow-[#2A8E9E]/30 active:scale-95"
+                        : "bg-[#2A8E9E]/10 text-[#1D1E20] hover:bg-[#2A8E9E]/20 border border-[#2A8E9E]/20 active:scale-95"
                     }`}
                   >
                     {tier.cta}
@@ -176,7 +176,7 @@ export default function Pricing() {
                       <div key={idx} className="flex items-start gap-2.5">
                         <div
                           className={`w-4 h-4 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0 ${
-                            tier.featured ? "bg-[#180D39]/20" : "bg-[#180D39]/10"
+                            tier.featured ? "bg-[#2A8E9E]/20" : "bg-[#2A8E9E]/10"
                           }`}
                         >
                           <Check size={14} className="text-[#2A8E9E]" />
