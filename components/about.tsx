@@ -18,101 +18,131 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" ref={sectionRef} className="py-10 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-[#2A8E9E]/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    <section 
+      id="about" 
+      ref={sectionRef} 
+      className="py-10 pt-5 bg-white relative overflow-hidden"
+      aria-labelledby="about-heading"
+    >
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute top-20 right-10 w-72 h-72 bg-[#1F6B77]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#0C0721]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className={`text-center mb-16 transition-all duration-1000 ${
+        {/* Section Header */}
+        <header className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}>
-          <div className="inline-flex items-center gap-1 bg-[#2A8E9E]/5 backdrop-blur-sm text-[#1D1E20] px-3 py-1.5 rounded-full text-xs font-medium border border-[#2A8E9E]/20 hover:border-[#2A8E9E]/40 transition mb-4">
-            <span className="w-2 h-2 bg-[#2A8E9E] rounded-full animate-pulse"></span>
-            About Me
+          <div 
+            className="inline-flex items-center gap-1 bg-[#1F6B77]/10 backdrop-blur-sm text-[#0F0F10] px-3 py-1.5 rounded-full text-xs font-medium border border-[#1F6B77]/30 hover:border-[#1F6B77]/50 transition"
+            role="status"
+          >
+            <span className="w-2 h-2 bg-[#1F6B77] rounded-full animate-pulse" aria-hidden="true"></span>
+            <span>About me</span>
           </div>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
+          {/* Profile Card */}
           <div className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
           }`}>
-            <div className="bg-white border border-[#2A8E9E]/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#2A8E9E]/5 rounded-full blur-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#180D39]/5 rounded-full blur-2xl"></div>
+            <article className="bg-white border border-[#1F6B77]/20 rounded-2xl p-8 shadow-lg hover:shadow-xl transition relative overflow-hidden">
+              {/* Decorative background */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#1F6B77]/5 rounded-full blur-2xl" aria-hidden="true"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#0C0721]/5 rounded-full blur-2xl" aria-hidden="true"></div>
               
               <div className="flex flex-col items-center relative z-10">
-                <div className="relative mb-6 group">
-                  <div className="w-56 h-56 rounded-full overflow-hidden">
+                {/* Profile Photo */}
+                <figure className="relative mb-6 group">
+                  <div className="w-56 h-56 rounded-full overflow-hidden ring-4 ring-[#1F6B77]/10">
                     <Image
                       src="/myFoto.webp"
-                      alt="Yaumul Majid"
-                      fill
+                      alt="Foto profil Yaumul Majid - Web Developer untuk UMKM"
+                      width={224}
+                      height={224}
                       className="object-cover rounded-full"
+                      priority
                     />
                   </div>
 
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#2A8E9E] text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg flex items-center gap-1.5 group-hover:scale-105 transition">
-                    <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
-                    Available for Projects
+                  {/* Status Badge */}
+                  <div 
+                    className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#1F6B77] text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg flex items-center gap-1.5 group-hover:scale-105 transition"
+                    role="status"
+                    aria-label="Status: Tersedia untuk proyek baru"
+                  >
+                    <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" aria-hidden="true"></span>
+                    <span>Available for Projects</span>
                   </div>
-                </div>
+                </figure>
 
-
-                <div className="grid grid-cols-3 gap-4 w-full mb-6 pt-2">
+                {/* Stats Grid */}
+                <dl className="grid grid-cols-3 gap-4 w-full mb-6 pt-2">
                   <div className="text-center">
-                    <p className="text-xl font-bold text-[#1D1E20]">3+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Years</p>
+                    <dt className="sr-only">Pengalaman</dt>
+                    <dd className="text-xl font-bold text-[#0F0F10]">3+</dd>
+                    <dt className="text-xs text-[#404040]">Tahun</dt>
                   </div>
 
-                  <div className="text-center border-x border-[#2A8E9E]/10">
-                    <p className="text-xl font-bold text-[#1D1E20]">20+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Projects</p>
+                  <div className="text-center border-x border-[#1F6B77]/20">
+                    <dt className="sr-only">Jumlah Proyek</dt>
+                    <dd className="text-xl font-bold text-[#0F0F10]">20+</dd>
+                    <dt className="text-xs text-[#404040]">Proyek</dt>
                   </div>
 
                   <div className="text-center">
-                    <p className="text-xl font-bold text-[#1D1E20]">20+</p>
-                    <p className="text-xs text-[#1D1E20]/60">Clients</p>
+                    <dt className="sr-only">Jumlah Klien</dt>
+                    <dd className="text-xl font-bold text-[#0F0F10]">20+</dd>
+                    <dt className="text-xs text-[#404040]">Klien</dt>
                   </div>
-                </div>
+                </dl>
               </div>
-            </div>
+            </article>
           </div>
 
+          {/* Content Section */}
           <div className={`space-y-6 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
           }`}>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1D1E20] leading-tight">
-              👋 Hai! Saya Yaumul Majid
+            <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-[#0F0F10] leading-tight">
+              <span role="img" aria-label="Hai">👋</span> Hai! Saya Yaumul Majid
             </h2>
 
-            <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
-              Web Developer yang membantu UMKM & Startup tampil profesional di dunia digital dengan website yang modern dan efektif.
+            <p className="text-sm md:text-base text-[#404040] leading-relaxed">
+              Web Developer yang membantu UMKM dan Startup tampil profesional di dunia digital dengan website yang modern dan efektif.
             </p>
 
             <div className="space-y-4 pt-2">
-              <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
-                Dengan pengalaman 3+ tahun membangun website untuk puluhan bisnis, saya tahu cara membuat website yang tidak hanya bagus dilihat, tapi juga efektif mendatangkan pelanggan.
+              <p className="text-sm md:text-base text-[#404040] leading-relaxed">
+                Dengan pengalaman <strong className="text-[#0F0F10] font-semibold">3+ tahun</strong> membangun website untuk puluhan bisnis, saya tahu cara membuat website yang tidak hanya bagus dilihat, tapi juga efektif mendatangkan pelanggan.
               </p>
 
-              <p className="text-sm md:text-base text-[#1D1E20]/70 leading-relaxed">
-                Saya menggunakan <strong className="text-[#1D1E20]">WordPress</strong> untuk solusi cepat, dan <strong className="text-[#1D1E20]">Custom Development</strong> (Spring Boot, Laravel) untuk kebutuhan yang lebih spesifik.
+              <p className="text-sm md:text-base text-[#404040] leading-relaxed">
+                Saya menggunakan <strong className="text-[#0F0F10] font-semibold">WordPress</strong> untuk solusi cepat, dan <strong className="text-[#0F0F10] font-semibold">Custom Development</strong> (Spring Boot, Laravel) untuk kebutuhan yang lebih spesifik.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 pt-3">
+            {/* Features List */}
+            <div className="grid grid-cols-2 gap-3 pt-3" role="list" aria-label="Keunggulan layanan">
               {[
-                "Desain Profesional",
-                "Mobile Friendly",
-                "SEO Optimized",
-                "Support Penuh",
+                { text: "Desain Profesional", icon: "✓" },
+                { text: "Mobile Friendly", icon: "✓" },
+                { text: "SEO Optimized", icon: "✓" },
+                { text: "Support Penuh", icon: "✓" },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <span className="text-[#2A8E9E] mt-0.5">✓</span>
-                  <span className="text-sm text-[#1D1E20]/70">{item}</span>
+                <div key={i} className="flex items-start gap-2" role="listitem">
+                  <span 
+                    className="text-[#1F6B77] mt-0.5 font-bold" 
+                    aria-hidden="true"
+                  >
+                    {item.icon}
+                  </span>
+                  <span className="text-sm text-[#404040]">{item.text}</span>
                 </div>
               ))}
             </div>

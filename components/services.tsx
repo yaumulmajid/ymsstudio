@@ -8,7 +8,7 @@ const services = [
     icon: Code2,
     title: "Pengembangan Web",
     description:
-      "Kami membuat website modern, responsif, dan cepat dengan teknologi terkini seperti WordPress dan Custom Development. Cocok untuk company profile, landing page, hingga toko online yang profesional dan user-friendly.",
+      "Membuat website modern, responsif, dan cepat dengan teknologi terkini seperti WordPress dan Custom Development. Cocok untuk company profile, landing page, hingga toko online yang profesional dan user-friendly.",
   },
   {
     icon: Smartphone,
@@ -73,12 +73,12 @@ export default function Services() {
             My Services
           </div>
           <h2
-            className={`text-3xl md:text-4xl font-bold text-[#1D1E20] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-3xl md:text-4xl font-bold text-[#404040] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Apa yang Saya Tawarkan
           </h2>
           <p
-            className={`text-base text-[#1D1E20]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`text-base text-[#404040]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             Solusi komprehensif untuk mewujudkan visi digital Anda dan mendorong hasil bisnis nyata.
           </p>
@@ -96,17 +96,17 @@ export default function Services() {
                 }`}
               >
                 {/* Hover Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2A8E9E]/10 to-[#180D39]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#180D39]/10 to-[#180D39]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
 
                 {/* Card */}
-                <div className="relative bg-white border border-[#2A8E9E]/20 rounded-xl p-5 hover:border-[#2A8E9E]/40 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#2A8E9E]/10">
+                <div className="relative bg-white border border-[#180D39]/20 rounded-xl p-5 hover:border-[#2A8E9E]/40 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#2A8E9E]/10">
                   {/* Icon */}
                   <div className="w-10 h-10 bg-gradient-to-br from-[#2A8E9E]/10 to-[#180D39]/5 rounded-lg p-2 mb-4 group-hover:from-[#2A8E9E]/15 group-hover:to-[#180D39]/10 transition-all duration-300">
                     <Icon className="w-6 h-6 text-[#2A8E9E]" strokeWidth={1.5} />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-base font-bold text-[#1D1E20] mb-2 group-hover:opacity-80 transition-opacity duration-300">
+                  <h3 className="text-base font-bold text-[#404040] mb-2 group-hover:opacity-80 transition-opacity duration-300">
                     {service.title}
                   </h3>
                   <p className="text-sm text-[#1D1E20]/60 leading-relaxed">{service.description}</p>
