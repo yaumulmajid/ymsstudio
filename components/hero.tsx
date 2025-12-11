@@ -25,7 +25,7 @@ export default function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="relative min-h-screen bg-white pt-20 flex items-center overflow-hidden"
+      className="relative min-h-screen bg-white flex items-center overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -46,7 +46,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2A8E9E] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2A8E9E]"></span>
               </span>
-              🔥 Promo UMKM: Diskon 30% + Gratis Domain & Hosting
+              🔥 Promo: Diskon 30% + Gratis Domain & Hosting
             </div>
 
             <div className="space-y-3">
@@ -59,7 +59,7 @@ export default function Hero() {
               <div className="h-1 w-20 bg-gradient-to-r from-[#2A8E9E] to-transparent rounded-full"></div>
             </div>
 
-            <p className="text-base md:text-lg text-[#1D1E20]/70 leading-relaxed max-w-xl">
+            <p className="text-base md:text-m text-[#1D1E20]/70 leading-relaxed max-w-xl">
               Website <strong className="text-[#1D1E20]">cepat & mobile-friendly</strong> untuk UMKM.
               Dari landing page hingga toko online dengan{" "}
               <strong className="text-[#1D1E20]">WordPress atau Custom Development</strong>.
