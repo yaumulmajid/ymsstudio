@@ -42,8 +42,8 @@ export default function CTA() {
             <span className="text-[#1D1E20]/85">Kehadiran Digital Anda?</span>
           </h2>
           <p className="text-base md:text-lg text-[#1D1E20]/80 max-w-2xl mx-auto mb-8">
-            Mari ciptakan sesuatu yang luar biasa bersama. Hubungi saya untuk mendiskusikan proyek Anda dan bagaimana
-            saya dapat membantu.
+            Mari ciptakan sesuatu yang luar biasa bersama. Hubungi kami untuk mendiskusikan proyek Anda dan bagaimana
+            kami dapat membantu.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">

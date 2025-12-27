@@ -17,7 +17,7 @@ const inter = Inter({
 // 🔥 TITLE BARU SESUAI PERMINTAAN
 // ============================================================
 export const metadata: Metadata = {
-  title: "YMS Studio - Website UMKM Profesional (Murah & Bergaransi)",
+  title: "YMS Studio - Jasa Website UMKM Profesional (Murah & Bergaransi)",
 
   description:
     "Jasa pembuatan website profesional untuk UMKM & bisnis kecil Indonesia. Toko online, company profile, landing page mulai 700rb. Cepat, mobile-friendly, dan bergaransi.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   publisher: "YMS Studio",
 
   openGraph: {
-    title: "YMS Studio - Website UMKM Profesional (Murah & Bergaransi)",
+    title: "YMS Studio - Jasa Website UMKM Profesional (Murah & Bergaransi)",
     description:
       "Pembuatan website UMKM cepat, mobile-friendly, dan terjangkau. Toko online, company profile, landing page untuk bisnis kecil Indonesia.",
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "https://ymsstudio.co.id/logo.webp",
         width: 1200,
         height: 630,
-        alt: "YMS Studio - Website UMKM Profesional Indonesia",
+        alt: "YMS Studio - Jasa Website UMKM Profesional Indonesia",
         type: "image/webp",
       },
     ],
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "YMS Studio - Website UMKM Profesional (Murah & Bergaransi)",
+    title: "YMS Studio - Jasa Website UMKM Profesional (Murah & Bergaransi)",
     description:
       "Jasa pembuatan website UMKM mulai 700rb. Toko Online, WordPress, Company Profile. Cepat, mobile-friendly, dan bergaransi.",
     images: ["https://ymsstudio.co.id/logo.webp"],
@@ -152,7 +152,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite",
               url: "https://ymsstudio.co.id",
-              name: "YMS Studio — Website UMKM Profesional (Murah & Bergaransi)",
+              name: "YMS Studio — Jasa Website UMKM Profesional (Murah & Bergaransi)",
               publisher: {
                 "@type": "Organization",
                 name: "YMS Studio",

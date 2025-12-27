@@ -168,7 +168,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="w-full bg-[#2A8E9E] hover:bg-[#180D39] text-white px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 block text-center"
             >
-              Hubungi Saya
+              Hubungi
             </a>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function Projects() {
           <p
             className={`text-base text-[#1D1E20]/90 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Beberapa website pilihan yang sudah saya kerjakan untuk berbagai bisnis.
+            Beberapa website pilihan yang sudah dikerjakan untuk berbagai bisnis.
           </p>
         </div>
 

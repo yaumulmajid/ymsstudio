@@ -70,12 +70,12 @@ export default function Services() {
             className={`inline-flex items-center gap-2 text-xs font-semibold text-[#1D1E20] mb-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             <span className="w-2 h-2 bg-[#2A8E9E] rounded-full"></span>
-            My Services
+            Services
           </div>
           <h2
             className={`text-3xl md:text-4xl font-bold text-[#1D1E20] mb-4 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
-            Apa yang Saya Tawarkan
+            Apa yang Kami Tawarkan
           </h2>
           <p
             className={`text-base text-[#1D1E20]/60 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}

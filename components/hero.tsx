@@ -25,7 +25,6 @@ export default function Hero() {
     const element = document.getElementById("pricing")
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
-      // Set focus untuk keyboard users
       element.focus({ preventScroll: true })
     }
   }
@@ -37,7 +36,7 @@ export default function Hero() {
       className="relative min-h-screen pt-7 bg-white flex items-center overflow-hidden"
       aria-labelledby="hero-heading"
     >
-      {/* Skip to content link untuk keyboard navigation */}
+      {/* Skip to content link */}
       <a
         href="#pricing"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#2A8E9E] focus:text-white focus:rounded-lg focus:shadow-lg"
@@ -45,23 +44,23 @@ export default function Hero() {
         Langsung ke Paket & Harga
       </a>
 
-      {/* Background Elements - decorative only */}
+      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#2A8E9E]/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.02fr_0.98fr] gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div
-            className={`space-y-6 transition-all duration-1000 ${
+            className={`space-y-5 transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
             {/* Promo Badge */}
             <div 
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#2A8E9E]/10 to-[#180D39]/10 backdrop-blur-sm text-[#1D1E20] px-4 py-2 rounded-full text-xs font-semibold border border-[#2A8E9E]/30 hover:border-[#2A8E9E]/50 transition-all duration-300 shadow-sm"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#2A8E9E]/10 to-[#180D39]/10 backdrop-blur-sm text-[#1D1E20] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#2A8E9E]/30 hover:border-[#2A8E9E]/50 transition-all duration-300 shadow-sm"
               role="status"
               aria-live="polite"
             >
@@ -75,25 +74,25 @@ export default function Hero() {
 
             {/* Main Heading */}
             <header className="space-y-3">
-              <h1 id="hero-heading" className="text-3xl md:text-3xl lg:text-5xl font-bold text-[#1D1E20] leading-[1.1] tracking-tight">
-                Website UMKM Profesional{" "}
-                <span className="bg-gradient-to-r from-[#2A8E9E] to-[#180D39] bg-clip-text text-transparent">
+              <h1 id="hero-heading" className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1D1E20] leading-[1.2] tracking-tight">
+                Jasa Website UMKM Profesional{" "}
+                <span className="bg-gradient-to-r from-[#2A8E9E] to-[#180D39] bg-clip-text text-transparent font-bold">
                   Harga Terjangkau
                 </span>
               </h1>
-              <div className="h-1 w-20 bg-gradient-to-r from-[#2A8E9E] to-transparent rounded-full" aria-hidden="true"></div>
+              <div className="h-1 w-16 bg-gradient-to-r from-[#2A8E9E] to-transparent rounded-full" aria-hidden="true"></div>
             </header>
 
             {/* Description */}
-            <p className="text-base md:text-m text-[#1D1E20]/90 leading-relaxed max-w-xl">
-              Website <strong className="text-[#1D1E20] font-semibold">cepat dan mobile-friendly</strong> untuk UMKM.
-              Dari landing page hingga toko online dengan{" "}
-              <strong className="text-[#1D1E20] font-semibold">WordPress atau Custom Development</strong>.
-              <strong className="text-[#1D1E20] font-semibold"> Selesai 3 hari</strong>, bergaransi.
+            <p className="text-base md:text-lg text-[#1D1E20]/80 leading-relaxed max-w-xl">
+              Website cepat dan mobile-friendly untuk UMKM.
+              Dari landing page hingga toko online dengan
+              WordPress atau Custom Development.
+              Selesai 3 hari, bergaransi.
             </p>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-2 gap-3 py-2">
+            <div className="grid grid-cols-2 gap-4 py-2">
               <h2 className="sr-only">Fitur Utama Layanan</h2>
               
               <div className="flex items-start gap-2">
@@ -104,8 +103,8 @@ export default function Hero() {
                   focusable="false"
                 />
                 <div>
-                  <h3 className="text-xs font-semibold text-[#1D1E20]">Selesai 3 Hari</h3>
-                  <p className="text-xs text-[#1D1E20]/90">Kerja cepat dan efisien</p>
+                  <h3 className="text-sm font-semibold text-[#1D1E20]">Selesai 3 Hari</h3>
+                  <p className="text-xs text-[#1D1E20]/80">Kerja cepat dan efisien</p>
                 </div>
               </div>
               
@@ -117,8 +116,8 @@ export default function Hero() {
                   focusable="false"
                 />
                 <div>
-                  <h3 className="text-xs font-semibold text-[#1D1E20]">Garansi 100%</h3>
-                  <p className="text-xs text-[#1D1E20]/90">Uang kembali</p>
+                  <h3 className="text-sm font-semibold text-[#1D1E20]">Garansi 100%</h3>
+                  <p className="text-xs text-[#1D1E20]/80">Uang kembali</p>
                 </div>
               </div>
               
@@ -130,8 +129,8 @@ export default function Hero() {
                   focusable="false"
                 />
                 <div>
-                  <h3 className="text-xs font-semibold text-[#1D1E20]">20+ UMKM Puas</h3>
-                  <p className="text-xs text-[#1D1E20]/90">Rating 4.9 dari 5</p>
+                  <h3 className="text-sm font-semibold text-[#1D1E20]">20+ UMKM Puas</h3>
+                  <p className="text-xs text-[#1D1E20]/80">Rating 4.9 dari 5</p>
                 </div>
               </div>
               
@@ -143,8 +142,8 @@ export default function Hero() {
                   focusable="false"
                 />
                 <div>
-                  <h3 className="text-xs font-semibold text-[#1D1E20]">Support 24/7</h3>
-                  <p className="text-xs text-[#1D1E20]/90">Via WhatsApp</p>
+                  <h3 className="text-sm font-semibold text-[#1D1E20]">Support 24/7</h3>
+                  <p className="text-xs text-[#1D1E20]/80">Via WhatsApp</p>
                 </div>
               </div>
             </div>
@@ -156,7 +155,7 @@ export default function Hero() {
                   href="https://wa.me/6283822640883?text=Halo%20Yaumul%2C%20saya%20pelaku%20UMKM%20mau%20konsultasi%20pembuatan%20website%20untuk%20usaha%20saya.%20Bisa%20bantu%3F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative bg-[#2A8E9E] hover:bg-[#180D39] text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 hover:shadow-2xl hover:shadow-[#2A8E9E]/20 overflow-hidden focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
+                  className="group relative bg-[#2A8E9E] hover:bg-[#180D39] text-white px-6 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 hover:shadow-2xl hover:shadow-[#2A8E9E]/20 overflow-hidden focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
                   aria-label="Konsultasi gratis via WhatsApp - buka di tab baru"
                 >
                   <span className="relative z-10 flex items-center gap-2">
@@ -174,7 +173,7 @@ export default function Hero() {
                 <button
                   onClick={scrollToPricing}
                   type="button"
-                  className="group border-2 border-[#2A8E9E] text-[#1D1E20] hover:border-[#180D39] hover:bg-[#2A8E9E]/5 px-6 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 active:scale-95 flex items-center justify-center gap-2 focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
+                  className="group border-2 border-[#2A8E9E] text-[#1D1E20] hover:border-[#180D39] hover:bg-[#2A8E9E]/5 px-6 py-3.5 rounded-xl font-medium text-sm transition-all duration-300 active:scale-95 flex items-center justify-center gap-2 focus:outline-none focus:ring-4 focus:ring-[#2A8E9E]/50 focus:ring-offset-2"
                   aria-label="Lihat paket dan harga, mulai dari 799 ribu rupiah"
                 >
                   <span>Lihat Paket & Harga</span>
@@ -184,49 +183,49 @@ export default function Hero() {
             </nav>
 
             {/* Trust Indicators */}
-            <aside aria-labelledby="trust-heading" className="pt-5 border-t border-[#1D1E20]/10">
+            <aside aria-labelledby="trust-heading" className="pt-4 border-t border-[#1D1E20]/10">
               <h2 id="trust-heading" className="sr-only">Kepercayaan Klien</h2>
               
-              {/* Mobile Grid */}
-              <div className="grid grid-cols-2 gap-3 sm:hidden">
-                <div className="flex items-center gap-1.5 text-xs">
+              {/* Mobile Horizontal Scroll */}
+              <div className="flex gap-3 overflow-x-auto pb-2 sm:hidden scrollbar-hide">
+                <div className="flex items-center gap-1.5 text-xs whitespace-nowrap px-3 py-2 bg-white rounded-lg border border-[#2A8E9E]/20">
                   <span className="text-green-600 font-semibold" aria-hidden="true">✓</span>
-                  <span className="font-medium text-[#1D1E20]">20+ UMKM</span>
+                  <span className="font-medium text-[#1D1E20]">Fashion & F&B</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs">
-                  <span role="img" aria-label="rating" aria-hidden="true">⭐</span>
-                  <span className="font-medium text-[#1D1E20]">Rating 4.9</span>
+                <div className="flex items-center gap-1.5 text-xs whitespace-nowrap px-3 py-2 bg-white rounded-lg border border-[#2A8E9E]/20">
+                  <span role="img" aria-label="toko online" aria-hidden="true">🛒</span>
+                  <span className="font-medium text-[#1D1E20]">Toko Online</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs">
-                  <span role="img" aria-label="garansi" aria-hidden="true">💰</span>
-                  <span className="font-medium text-[#1D1E20]">Garansi</span>
+                <div className="flex items-center gap-1.5 text-xs whitespace-nowrap px-3 py-2 bg-white rounded-lg border border-[#2A8E9E]/20">
+                  <span role="img" aria-label="jasa" aria-hidden="true">🏢</span>
+                  <span className="font-medium text-[#1D1E20]">Jasa & Konsultan</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs">
-                  <span role="img" aria-label="cepat" aria-hidden="true">⚡</span>
-                  <span className="font-medium text-[#1D1E20]">Respons Cepat</span>
+                <div className="flex items-center gap-1.5 text-xs whitespace-nowrap px-3 py-2 bg-white rounded-lg border border-[#2A8E9E]/20">
+                  <span role="img" aria-label="produk" aria-hidden="true">📦</span>
+                  <span className="font-medium text-[#1D1E20]">Produk Lokal</span>
                 </div>
               </div>
 
               {/* Desktop List */}
-              <ul className="hidden sm:flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-[#1D1E20]/70 list-none">
-                <li className="flex items-center gap-1.5">
+              <ul className="hidden sm:flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[#1D1E20]/80 list-none">
+                <li className="flex items-center gap-1.5 whitespace-nowrap">
                   <span className="text-green-600 font-semibold" aria-hidden="true">✓</span>
-                  <span className="font-medium text-[#1D1E20]">Dipercaya 20+ UMKM</span>
+                  <span className="font-medium text-[#1D1E20]">Fashion & F&B</span>
                 </li>
                 <li className="w-px h-4 bg-[#1D1E20]/20" aria-hidden="true"></li>
-                <li className="flex items-center gap-1.5">
-                  <span role="img" aria-label="rating" aria-hidden="true">⭐</span>
-                  <span className="font-medium text-[#1D1E20]">Rating 4.9 dari 5</span>
+                <li className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span role="img" aria-label="toko online" aria-hidden="true">🛒</span>
+                  <span className="font-medium text-[#1D1E20]">Toko Online</span>
                 </li>
                 <li className="w-px h-4 bg-[#1D1E20]/20" aria-hidden="true"></li>
-                <li className="flex items-center gap-1.5">
-                  <span role="img" aria-label="garansi" aria-hidden="true">💰</span>
-                  <span className="font-medium text-[#1D1E20]">Garansi Uang Kembali</span>
+                <li className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span role="img" aria-label="jasa" aria-hidden="true">🏢</span>
+                  <span className="font-medium text-[#1D1E20]">Jasa & Konsultan</span>
                 </li>
                 <li className="w-px h-4 bg-[#1D1E20]/20" aria-hidden="true"></li>
-                <li className="flex items-center gap-1.5">
-                  <span role="img" aria-label="cepat" aria-hidden="true">⚡</span>
-                  <span className="font-medium text-[#1D1E20]">Respons Cepat</span>
+                <li className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span role="img" aria-label="produk" aria-hidden="true">📦</span>
+                  <span className="font-medium text-[#1D1E20]">Produk Lokal</span>
                 </li>
               </ul>
             </aside>

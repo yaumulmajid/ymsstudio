@@ -70,10 +70,10 @@ export default function Header({ isScrolled }: HeaderProps) {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className={`text-sm font-semibold transition-colors ${
+                className={`text-sm font-medium transition-colors ${
                   activeLink === link.href.replace("#", "")
                     ? "text-[#2A8E9E]"
-                    : "text-[#1D1E20]/90 hover:text-[#1D1E20]/90"
+                    : "text-[#1D1E20]/70 hover:text-[#1D1E20]"
                 }`}
               >
                 {link.name}

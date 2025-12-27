@@ -50,7 +50,6 @@ export default function Home() {
     <div className="overflow-x-hidden bg-background text-foreground transition-colors duration-300">
       <Header isScrolled={isScrolled} isDark={isDark} toggleTheme={toggleTheme} />
       <Hero />
-      <About />
       <Services />
       <Projects />
       <Pricing />
