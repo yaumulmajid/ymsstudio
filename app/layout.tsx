@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import WhatsAppButton from "@/components/ui/WhatsAppButton"
 import "./globals.css"
@@ -13,9 +14,6 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 })
 
-// ============================================================
-// 🔥 TITLE BARU SESUAI PERMINTAAN
-// ============================================================
 export const metadata: Metadata = {
   title: "YMS Studio - Jasa Website UMKM Profesional (Murah & Bergaransi)",
 
@@ -106,24 +104,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
         <meta name="theme-color" content="#2A8E9E" />
 
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17737646735"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17737646735');
-            `,
-          }}
-        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
-        {/* ============================================================
-            ORGANIZATION SCHEMA
-        ============================================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -142,9 +125,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-        {/* ============================================================
-            WEBSITE SCHEMA
-        ============================================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -165,9 +145,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-        {/* ============================================================
-            LOCALBUSINESS SCHEMA
-        ============================================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -243,9 +220,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-        {/* ============================================================
-            SERVICE SCHEMA
-        ============================================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -275,9 +249,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-        {/* ============================================================
-            FAQ SCHEMA
-        ============================================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -326,6 +297,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} antialiased`}>
         {children}
         <WhatsAppButton />
+        
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
+
+        <script
+          defer
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17737646735"
+        />
+        <script
+          defer
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17737646735');
+            `,
+          }}
+        />
       </body>
     </html>
   )
