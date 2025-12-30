@@ -42,11 +42,11 @@ export const metadata: Metadata = {
       "Pembuatan website UMKM cepat, mobile-friendly, dan terjangkau. Toko online, company profile, landing page untuk bisnis kecil Indonesia.",
     type: "website",
     locale: "id_ID",
-    url: "https://ymsstudio.co.id",
+    url: "https://ymsstudio.id",
     siteName: "YMS Studio",
     images: [
       {
-        url: "https://ymsstudio.co.id/logo.webp",
+        url: "https://ymsstudio.id/logo.webp",
         width: 1200,
         height: 630,
         alt: "YMS Studio - Jasa Website UMKM Profesional Indonesia",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "YMS Studio - Jasa Website UMKM Profesional (Murah & Bergaransi)",
     description:
       "Jasa pembuatan website UMKM mulai 700rb. Toko Online, WordPress, Company Profile. Cepat, mobile-friendly, dan bergaransi.",
-    images: ["https://ymsstudio.co.id/logo.webp"],
+    images: ["https://ymsstudio.id/logo.webp"],
     creator: "@ymsstudio",
     site: "@ymsstudio",
   },
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://ymsstudio.co.id",
+    canonical: "https://ymsstudio.id",
     languages: {
-      "id-ID": "https://ymsstudio.co.id",
+      "id-ID": "https://ymsstudio.id",
     },
   },
 }
@@ -114,8 +114,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "YMS Studio",
-              url: "https://ymsstudio.co.id",
-              logo: "https://ymsstudio.co.id/logo.webp",
+              url: "https://ymsstudio.id",
+              logo: "https://ymsstudio.id/logo.webp",
               sameAs: [
                 "https://www.instagram.com/ymsstud.io",
                 "https://www.facebook.com/ymsstudio",
@@ -131,14 +131,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              url: "https://ymsstudio.co.id",
+              url: "https://ymsstudio.id",
               name: "YMS Studio — Jasa Website UMKM Profesional (Murah & Bergaransi)",
               publisher: {
                 "@type": "Organization",
                 name: "YMS Studio",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://ymsstudio.co.id/logo.webp",
+                  url: "https://ymsstudio.id/logo.webp",
                 },
               },
             }),
@@ -151,11 +151,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://ymsstudio.co.id/#services",
+              "@id": "https://ymsstudio.id/#services",
               name: "YMS Studio - Jasa Pembuatan Website UMKM",
-              url: "https://ymsstudio.co.id",
-              image: "https://ymsstudio.co.id/logo.webp",
-              logo: "https://ymsstudio.co.id/logo.webp",
+              url: "https://ymsstudio.id",
+              image: "https://ymsstudio.id/logo.webp",
+              logo: "https://ymsstudio.id/logo.webp",
               description:
                 "Jasa pembuatan website profesional untuk UMKM Indonesia. Cepat, mobile-friendly, SEO-ready, harga terjangkau mulai 700rb, dan bergaransi.",
               telephone: "+6283822640883",
@@ -230,7 +230,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               provider: {
                 "@type": "LocalBusiness",
                 name: "YMS Studio",
-                url: "https://ymsstudio.co.id",
+                url: "https://ymsstudio.id",
               },
               areaServed: {
                 "@type": "Country",
@@ -243,7 +243,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 price: "700000",
                 priceCurrency: "IDR",
                 availability: "https://schema.org/InStock",
-                url: "https://ymsstudio.co.id",
+                url: "https://ymsstudio.id",
               },
             }),
           }}

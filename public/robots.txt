@@ -1,5 +1,5 @@
 # robots.txt untuk ymsstudio.co.id
-# Website: https://ymsstudio.co.id
+# Website: https://ymsstudio.id
 # Last Updated: 2024-12-09
 
 # Mengizinkan semua search engine crawler
@@ -26,7 +26,7 @@ Allow: /*.webp$
 Allow: /*.svg$
 
 # Sitemap location
-Sitemap: https://ymsstudio.co.id/sitemap.xml
+Sitemap: https://ymsstudio.id/sitemap.xml
 
 # Crawl rate optimization
 Crawl-delay: 1
