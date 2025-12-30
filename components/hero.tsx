@@ -226,7 +226,7 @@ export default function Hero() {
           </div>
 
           {/* Right - Image & Stats */}
-          <div className="opacity-100 translate-y-0 scale-100 order-first lg:order-last">
+          <div className="opacity-100 translate-y-0 scale-100 lg:order-last">
             {/* Main Image - Mobile optimized */}
             <figure className="relative aspect-[16/10] sm:aspect-[4/3] group rounded-xl lg:rounded-2xl overflow-hidden shadow-xl lg:shadow-2xl border border-[#2A8E9E]/20 bg-[#2A8E9E]/5">
               <Image
