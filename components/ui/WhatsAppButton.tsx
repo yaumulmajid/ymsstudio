@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
   const handleClick = () => {
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "conversion", {
-        send_to: "AW-17737646735/pF2LCOiP2c8bEI-F_IlC",
+        send_to: "AW-17737646735/hlfWCMHqi9obEI-F_IlC",
         event_callback: () => {
           console.log("WhatsApp conversion tracked")
         },
