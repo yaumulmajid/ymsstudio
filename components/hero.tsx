@@ -44,20 +44,16 @@ export default function Hero() {
         Langsung ke Paket & Harga
       </a>
 
-      {/* Background Elements */}
+      {/* Background Elements - Lazy render */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#2A8E9E]/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#2A8E9E]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#180D39]/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.02fr_0.98fr] gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div
-            className={`space-y-5 transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
-            }`}
-          >
+          <div className="space-y-5 opacity-100 translate-x-0">
             {/* Promo Badge */}
             <div 
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#2A8E9E]/10 to-[#180D39]/10 backdrop-blur-sm text-[#1D1E20] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#2A8E9E]/30 hover:border-[#2A8E9E]/50 transition-all duration-300 shadow-sm"
@@ -100,7 +96,6 @@ export default function Hero() {
                   className="text-[#2A8E9E] flex-shrink-0 mt-0.5" 
                   size={18} 
                   aria-hidden="true" 
-                  focusable="false"
                 />
                 <div>
                   <h3 className="text-sm font-semibold text-[#1D1E20]">Selesai 3 Hari</h3>
@@ -113,7 +108,6 @@ export default function Hero() {
                   className="text-[#180D39] flex-shrink-0 mt-0.5" 
                   size={18} 
                   aria-hidden="true"
-                  focusable="false"
                 />
                 <div>
                   <h3 className="text-sm font-semibold text-[#1D1E20]">Garansi 100%</h3>
@@ -126,7 +120,6 @@ export default function Hero() {
                   className="text-[#2A8E9E] flex-shrink-0 mt-0.5" 
                   size={18} 
                   aria-hidden="true"
-                  focusable="false"
                 />
                 <div>
                   <h3 className="text-sm font-semibold text-[#1D1E20]">20+ UMKM Puas</h3>
@@ -139,7 +132,6 @@ export default function Hero() {
                   className="text-[#180D39] flex-shrink-0 mt-0.5" 
                   size={18} 
                   aria-hidden="true"
-                  focusable="false"
                 />
                 <div>
                   <h3 className="text-sm font-semibold text-[#1D1E20]">Support 24/7</h3>
@@ -164,7 +156,6 @@ export default function Hero() {
                       size={18} 
                       className="group-hover:translate-x-1 transition-transform" 
                       aria-hidden="true"
-                      focusable="false"
                     />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" aria-hidden="true"></div>
@@ -231,23 +222,22 @@ export default function Hero() {
             </aside>
           </div>
 
-          {/* Right - Image & Stats */}
-          <div
-            className={`transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-8 scale-95"
-            }`}
-          >
-            {/* Main Image */}
+          {/* Right - Image & Stats - OPTIMIZED FOR LCP */}
+          <div className="opacity-100 translate-y-0 scale-100">
+            {/* Main Image - LCP Element */}
             <figure className="relative aspect-[4/3] group rounded-2xl overflow-hidden shadow-2xl border border-[#2A8E9E]/20 bg-[#2A8E9E]/5">
               <Image
                 src="/project-hero.webp"
                 alt="Tampilan contoh website UMKM profesional dengan desain modern, responsif, dan user-friendly yang dibuat oleh tim kami"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-[3000ms] ease-out"
+                width={800}
+                height={600}
+                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-[3000ms] ease-out"
                 priority
-                loading="eager"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                quality={75}
+                fetchPriority="high"
+                quality={85}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 700px"
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#180D39]/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true"></div>
             </figure>
@@ -280,7 +270,7 @@ export default function Hero() {
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce" aria-hidden="true">
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-[#1D1E20]/50">Scroll untuk info lebih</span>
-            <ChevronDown className="text-[#2A8E9E]" size={24} focusable="false" />
+            <ChevronDown className="text-[#2A8E9E]" size={24} />
           </div>
         </div>
       </div>
