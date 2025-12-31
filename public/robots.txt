@@ -4,16 +4,23 @@
 User-agent: *
 Allow: /
 
-# Block Next.js internal files
-Disallow: /_next/static/
+# IMPORTANT: Allow Next.js static files for proper rendering
+Allow: /_next/static/
+
+# Block API routes (tetap diblokir untuk security)
 Disallow: /api/
 
-# Block system files (hanya JSON)
+# Block system files
 Disallow: /*.json$
 
-# Allow all images (PENTING untuk SEO)
+# Allow all images
 User-agent: Googlebot-Image
 Allow: /
+
+# Allow Googlebot to access everything needed for ads
+User-agent: Googlebot
+Allow: /
+Allow: /_next/static/
 
 # Sitemap location
 Sitemap: https://ymsstudio.id/sitemap.xml
