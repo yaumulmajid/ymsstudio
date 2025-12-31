@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Suspense } from "react"
-import { Analytics } from "@vercel/analytics/next"
 import WhatsAppButton from "@/components/ui/WhatsAppButton"
 import "./globals.css"
 
@@ -291,11 +290,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Suspense fallback={null}>
           <WhatsAppButton />
         </Suspense>
-
-        <Suspense fallback={null}>
-          <Analytics />
-        </Suspense>
-
         {/* Defer Google Analytics */}
         <script
           defer
